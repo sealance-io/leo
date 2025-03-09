@@ -1,11 +1,26 @@
 namespace = "Compile"
 expectation = "Pass"
-outputs = [[{ compile = [{ initial_ast = "40a6e7d505f3bab72ee0168162b75b14b8561f12802436474204975b14779390", unrolled_ast = "40a6e7d505f3bab72ee0168162b75b14b8561f12802436474204975b14779390", ssa_ast = "501e9b241e2fffeccf8ca30ce6f9a376b8e44963bd0c6bbf658487bf37dc305e", flattened_ast = "635fe4ff1f474dfc00269e89c09c79448b323717934aedaa95b7324962c3cf6f", destructured_ast = "891264ac13905b0945ba79a30c983a1fd0c24e25e8ed34e88b4ea900102ab202", inlined_ast = "891264ac13905b0945ba79a30c983a1fd0c24e25e8ed34e88b4ea900102ab202", dce_ast = "30f56477cb5b4aa77766e5ef1bd6843fca895ac2ead1cc86ee15bd0561f71849", bytecode = """
+outputs = [[{ compile = [{ initial_ast = "40a6e7d505f3bab72ee0168162b75b14b8561f12802436474204975b14779390", unrolled_ast = "40a6e7d505f3bab72ee0168162b75b14b8561f12802436474204975b14779390", ssa_ast = "501e9b241e2fffeccf8ca30ce6f9a376b8e44963bd0c6bbf658487bf37dc305e", flattened_ast = "635fe4ff1f474dfc00269e89c09c79448b323717934aedaa95b7324962c3cf6f", destructured_ast = "891264ac13905b0945ba79a30c983a1fd0c24e25e8ed34e88b4ea900102ab202", inlined_ast = "891264ac13905b0945ba79a30c983a1fd0c24e25e8ed34e88b4ea900102ab202", dce_ast = "766c9756d3509974752ad61714ddd053193ad12e1bfdd3624317e092b8732164", bytecode = """
 program test.aleo;
 
 function main:
     input r0 as i8.private;
     input r1 as i8.private;
-    is.eq r0 r1 into r2;
-    output r2 as boolean.private;
+    abs r0 into r2;
+    neg r0 into r3;
+    add r0 r1 into r4;
+    div r0 r1 into r5;
+    mul r0 r1 into r6;
+    pow r0 2u8 into r7;
+    pow r0 2u16 into r8;
+    pow r0 2u32 into r9;
+    shl r0 2u8 into r10;
+    shl r0 2u16 into r11;
+    shl r0 2u32 into r12;
+    shr r0 2u8 into r13;
+    shr r0 2u16 into r14;
+    shr r0 2u32 into r15;
+    rem r0 r1 into r16;
+    is.eq r0 r1 into r17;
+    output r17 as boolean.private;
 """, errors = "", warnings = "" }] }]]

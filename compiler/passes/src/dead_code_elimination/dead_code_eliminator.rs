@@ -14,64 +14,83 @@
 // You should have received a copy of the GNU General Public License
 // along with the Leo library. If not, see <https://www.gnu.org/licenses/>.
 
-use leo_ast::{AccessExpression, BinaryOperation, Expression, UnaryOperation};
+use leo_ast::{AccessExpression, BinaryOperation, Expression, Node as _, Type, UnaryOperation};
 use leo_span::{Symbol, sym};
 
 use indexmap::IndexSet;
 
+use crate::TypeTable;
+
 #[derive(Debug)]
-pub struct DeadCodeEliminator {
+pub struct DeadCodeEliminator<'a> {
     /// The set of used variables in the current function body.
     pub(crate) used_variables: IndexSet<Symbol>,
 
     /// The name of the program currently being processed.
     pub(crate) program_name: Symbol,
+
+    /// The `TypeTable` of the code being processed.
+    pub(crate) type_table: &'a TypeTable,
 }
 
-impl DeadCodeEliminator {
+impl<'a> DeadCodeEliminator<'a> {
     /// Initializes a new `DeadCodeEliminator`.
-    pub(crate) fn new() -> Self {
-        Self { used_variables: Default::default(), program_name: Symbol::intern("") }
+    pub(crate) fn new(type_table: &'a TypeTable) -> Self {
+        Self { used_variables: Default::default(), program_name: Symbol::intern(""), type_table }
     }
 
-    pub(crate) fn side_effect_free(expr: &Expression) -> bool {
+    pub(crate) fn side_effect_free(&self, expr: &Expression) -> bool {
         use Expression::*;
 
+        let sef = |expr| self.side_effect_free(expr);
+
         match expr {
-            Access(AccessExpression::Array(array)) => {
-                Self::side_effect_free(&array.array) && Self::side_effect_free(&array.index)
-            }
+            Access(AccessExpression::Array(array)) => sef(&array.array) && sef(&array.index),
             Access(AccessExpression::AssociatedConstant(_)) => true,
             Access(AccessExpression::AssociatedFunction(func)) => {
-                func.arguments.iter().all(Self::side_effect_free)
+                func.arguments.iter().all(sef)
                     && !matches!(func.variant.name, sym::CheatCode | sym::Mapping | sym::Future)
             }
-            Access(AccessExpression::Member(mem)) => Self::side_effect_free(&mem.inner),
-            Access(AccessExpression::Tuple(tuple)) => Self::side_effect_free(&tuple.tuple),
-            Array(array) => array.elements.iter().all(Self::side_effect_free),
+            Access(AccessExpression::Member(mem)) => sef(&mem.inner),
+            Access(AccessExpression::Tuple(tuple)) => sef(&tuple.tuple),
+            Array(array) => array.elements.iter().all(sef),
             Binary(bin) => {
                 use BinaryOperation::*;
-                // These operations may halt, and so aren't side effect free.
-                !matches!(bin.op, Add | Div | Mod | Mul | Pow | Shl | Shr)
-                    && Self::side_effect_free(&bin.left)
-                    && Self::side_effect_free(&bin.right)
+                let halting_op = match bin.op {
+                    // These can halt for any of their operand types.
+                    Div | Mod | Rem | Shl | Shr => true,
+                    // These can only halt for integers.
+                    Add | Mul | Pow => {
+                        matches!(self.type_table.get(&expr.id()).expect("Types should be assigned."), Type::Integer(..))
+                    }
+                    _ => false,
+                };
+                !halting_op && sef(&bin.left) && sef(&bin.right)
             }
             Call(..) => {
                 // Since calls may halt, be conservative and don't consider any call side effect free.
                 false
             }
-            Cast(cast) => Self::side_effect_free(&cast.expression),
-            Struct(struct_) => {
-                struct_.members.iter().all(|mem| mem.expression.as_ref().map_or(true, Self::side_effect_free))
+            Cast(..) => {
+                // At least for now, be conservative and don't consider any cast side effect free.
+                // Of course for some combinations of types, casts will never halt.
+                true
             }
-            Ternary(tern) => {
-                [&*tern.condition, &*tern.if_true, &*tern.if_false].into_iter().all(Self::side_effect_free)
-            }
-            Tuple(tuple) => tuple.elements.iter().all(Self::side_effect_free),
+            Struct(struct_) => struct_.members.iter().all(|mem| mem.expression.as_ref().map_or(true, sef)),
+            Ternary(tern) => [&*tern.condition, &*tern.if_true, &*tern.if_false].into_iter().all(sef),
+            Tuple(tuple) => tuple.elements.iter().all(sef),
             Unary(un) => {
                 use UnaryOperation::*;
-                // These operations may halt, and so aren't side effect free.
-                !matches!(un.op, Abs | Inverse | SquareRoot) && Self::side_effect_free(&un.receiver)
+                let halting_op = match un.op {
+                    // These can halt for any of their operand types.
+                    Abs | Inverse | SquareRoot => true,
+                    // Negate can only halt for integers.
+                    Negate => {
+                        matches!(self.type_table.get(&expr.id()).expect("Type should be assigned."), Type::Integer(..))
+                    }
+                    _ => false,
+                };
+                !halting_op && sef(&un.receiver)
             }
             Err(_) => false,
             Identifier(_) | Literal(_) | Locator(_) | Unit(_) => true,

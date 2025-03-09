@@ -1,6 +1,6 @@
 namespace = "Compile"
 expectation = "Pass"
-outputs = [[{ compile = [{ initial_ast = "117744a82db2c8ec3103bbc81dc52488131bafd739a4cf2b9ece1cd09072e0f8", unrolled_ast = "c72b51a21cf5b8c54247fe1cc97ced684c05a3890b37d439f33f989cdd527934", ssa_ast = "68f8c7d00e7f1d78d34c0d665aae155f513afa0c537e6015c4db79a064c48c3c", flattened_ast = "b63f4334440608999d7768d0c9f7e678f80878828e14c21fae131997be2aa805", destructured_ast = "444972551a7266cc3d92bd3c5b7548fc48879155db49675f7aae5b25ebec0678", inlined_ast = "4bb20b45a2271db7c943323bb5cf58592975ad68678ccf31bf5b8f984fef4371", dce_ast = "22ee951220c0ff37c0442850923ed4a8f0c512d95f34e7469ae7764e79e8a352", bytecode = """
+outputs = [[{ compile = [{ initial_ast = "117744a82db2c8ec3103bbc81dc52488131bafd739a4cf2b9ece1cd09072e0f8", unrolled_ast = "c72b51a21cf5b8c54247fe1cc97ced684c05a3890b37d439f33f989cdd527934", ssa_ast = "68f8c7d00e7f1d78d34c0d665aae155f513afa0c537e6015c4db79a064c48c3c", flattened_ast = "b63f4334440608999d7768d0c9f7e678f80878828e14c21fae131997be2aa805", destructured_ast = "444972551a7266cc3d92bd3c5b7548fc48879155db49675f7aae5b25ebec0678", inlined_ast = "4bb20b45a2271db7c943323bb5cf58592975ad68678ccf31bf5b8f984fef4371", dce_ast = "4bb70f8cf8c975af4881e635c52f86a757311bbf129470df66dcd0cad780db0a", bytecode = """
 program test.aleo;
 
 closure reverse_bits:
@@ -74,8 +74,9 @@ closure reverse_bits:
     is.eq r66 1u8 into r67;
     xor r65 1u8 into r68;
     ternary r67 r68 r65 into r69;
-    ternary r64 r69 r62 into r70;
-    output r70 as u8;
+    shr r63 1u8 into r70;
+    ternary r64 r69 r62 into r71;
+    output r71 as u8;
 
 function fibonacci:
     input r0 as u8.public;
@@ -225,7 +226,10 @@ function fibonacci:
     shl 1u8 r134 into r143;
     and r2 r143 into r144;
     is.eq r144 0u8 into r145;
-    ternary r145 r142 r139 into r146;
-    ternary r136 r146 r132 into r147;
-    output r147 as u128.private;
+    add r142 r139 into r146;
+    ternary r145 r142 r139 into r147;
+    add r134 1u8 into r148;
+    shr r135 1u8 into r149;
+    ternary r136 r147 r132 into r150;
+    output r150 as u128.private;
 """, errors = "", warnings = "" }] }]]

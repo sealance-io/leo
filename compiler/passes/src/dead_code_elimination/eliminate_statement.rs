@@ -29,7 +29,7 @@ use leo_ast::{
     StatementReconstructor,
 };
 
-impl StatementReconstructor for DeadCodeEliminator {
+impl StatementReconstructor for DeadCodeEliminator<'_> {
     /// Reconstruct an assignment statement by eliminating any dead code.
     fn reconstruct_assign(&mut self, mut input: AssignStatement) -> (Statement, Self::AdditionalOutput) {
         // Check the lhs of the assignment to see any of variables are used.
@@ -44,7 +44,7 @@ impl StatementReconstructor for DeadCodeEliminator {
             ),
         };
 
-        if !lhs_is_used && Self::side_effect_free(&input.value) {
+        if !lhs_is_used && self.side_effect_free(&input.value) {
             // We can eliminate this statement.
             (Statement::dummy(), Default::default())
         } else {
@@ -87,7 +87,7 @@ impl StatementReconstructor for DeadCodeEliminator {
         &mut self,
         mut input: ExpressionStatement,
     ) -> (Statement, Self::AdditionalOutput) {
-        if Self::side_effect_free(&input.expression) {
+        if self.side_effect_free(&input.expression) {
             (Statement::dummy(), Default::default())
         } else {
             input.expression = self.reconstruct_expression(input.expression).0;

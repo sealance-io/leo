@@ -1,7 +1,7 @@
 namespace = "Compile"
 expectation = "Pass"
 outputs = [[{ compile = [
-    { initial_ast = "097f10d87647d844617c056c30f24c84d7c8f1ce039dcdffcd43087e5f03c071", unrolled_ast = "097f10d87647d844617c056c30f24c84d7c8f1ce039dcdffcd43087e5f03c071", ssa_ast = "1e22ea418facff5d568b7990eccf47d9c673fe73836619271b05da0aa7c22b4a", flattened_ast = "e6142870cf073d23cef7b98821a55062d16f92a0692f5a27eae0ecd1048d2444", destructured_ast = "a4dfd26cffa2a5b94b8edac3964e85daffde098a0b89e26a4f39fb3f7d954148", inlined_ast = "eda8aff94711e2c957e042aab5d597b8528b5fb1096b950f191394994ecf6270", dce_ast = "4bf6c5c2ddb574cbb1ab150a1205d75804ed80ea5b4de77bbf3a7db45686b830", bytecode = """
+    { initial_ast = "097f10d87647d844617c056c30f24c84d7c8f1ce039dcdffcd43087e5f03c071", unrolled_ast = "097f10d87647d844617c056c30f24c84d7c8f1ce039dcdffcd43087e5f03c071", ssa_ast = "1e22ea418facff5d568b7990eccf47d9c673fe73836619271b05da0aa7c22b4a", flattened_ast = "e6142870cf073d23cef7b98821a55062d16f92a0692f5a27eae0ecd1048d2444", destructured_ast = "a4dfd26cffa2a5b94b8edac3964e85daffde098a0b89e26a4f39fb3f7d954148", inlined_ast = "eda8aff94711e2c957e042aab5d597b8528b5fb1096b950f191394994ecf6270", dce_ast = "ff878186407f9e10c752f3db3dbe1d9d81988b3e63a17fd655d95fafd36fc9d9", bytecode = """
 program test_dep.aleo;
 
 record yeets:
@@ -23,6 +23,7 @@ finalize main_dep:
     input r0 as u32.public;
     input r1 as u32.public;
     set r1 into Yo[r0];
+    add r0 r1 into r2;
 
 function main_dep_2:
     input r0 as u32.private;

@@ -1,7 +1,7 @@
 namespace = "Compile"
 expectation = "Pass"
 outputs = [[{ compile = [
-    { initial_ast = "328918d0b3dd6923b30d9ce7404976121e3dd96f32210e9fb514726faef7c2ef", unrolled_ast = "328918d0b3dd6923b30d9ce7404976121e3dd96f32210e9fb514726faef7c2ef", ssa_ast = "a29765973d8c7313f07a01152b5581c3a4a3c1267884e05a7fa16baf4d7eda9a", flattened_ast = "05bafd18d629e278768fec4822d37248cd589e8f59c75bf78ad582537883f14a", destructured_ast = "6699cd507df88cf03996fac9461d68507a638ead5f1fde0b327c9be668a7c098", inlined_ast = "964a923aac955f9e4ed02b83039a2a9a15b1c032ebba4d67fb2b0f7f594f2cf7", dce_ast = "5afc2ca53e5e27a97714525074c8b8222587b1c314ad97227c188f5c895de05e", bytecode = """
+    { initial_ast = "328918d0b3dd6923b30d9ce7404976121e3dd96f32210e9fb514726faef7c2ef", unrolled_ast = "328918d0b3dd6923b30d9ce7404976121e3dd96f32210e9fb514726faef7c2ef", ssa_ast = "a29765973d8c7313f07a01152b5581c3a4a3c1267884e05a7fa16baf4d7eda9a", flattened_ast = "05bafd18d629e278768fec4822d37248cd589e8f59c75bf78ad582537883f14a", destructured_ast = "6699cd507df88cf03996fac9461d68507a638ead5f1fde0b327c9be668a7c098", inlined_ast = "964a923aac955f9e4ed02b83039a2a9a15b1c032ebba4d67fb2b0f7f594f2cf7", dce_ast = "989ddbc63778a3da1af9f1710c7874b0f3507d3d2bed1ee59470567a9f635fa5", bytecode = """
 program test_dep.aleo;
 
 record yeets:
@@ -23,6 +23,7 @@ finalize main_dep:
     input r0 as u32.public;
     input r1 as u32.public;
     set r1 into Yo[r0];
+    add r0 r1 into r2;
 """, errors = "", warnings = "" },
     { initial_ast = "64089bd9ecc0ab9ce224328c7ba9b2ece577f585b2417b48eb0883ec8cec304c", unrolled_ast = "87332400b418ba69369868f3dc23ffc308ba69c8d74bf825fd8da32c7e00be6d", ssa_ast = "0ce0a7467c76051fc71ac74315909d6cd9a663cb9247dab9099d0bd42e81c0fe", flattened_ast = "83f9e5b1c8f84184dd6463ce879339b2cb8e1b8a3227f0082a2525b8ac0663ad", destructured_ast = "59a628b450623e750cbf4e9c98ec998b4cf15f8783a1cc1e55bf49574958d132", inlined_ast = "4afee3c7f0d246dd87a44bf9a6af5fa9425d3c24d30175938bc4bf0d810249a1", dce_ast = "511c64c9e4d2c7a76399ea590d38b0916647bee771c3d079a046297ec0ca5984", bytecode = """
 import test_dep.aleo;

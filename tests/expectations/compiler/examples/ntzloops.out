@@ -1,6 +1,6 @@
 namespace = "Compile"
 expectation = "Pass"
-outputs = [[{ compile = [{ initial_ast = "fddba4f56016625454f5d5da3fa81487ea9b30358b35269f8bf700976590cfb9", unrolled_ast = "7836b25daf715713e524bae5b97f386467a56800e9cf2c1bf82fb8b325bf0453", ssa_ast = "4722f28fe8337f0caffc634cfb981611b3faed19ce7ee7111cc5d277cab4b6a6", flattened_ast = "909bce610a5acc7bc7ade27a07017658e57f60cf2e406a989aaad5da4cde549c", destructured_ast = "1f647f0f5bbbb23c9699379af4f77d0f02585acacd889d5a51556bcc48af3add", inlined_ast = "1f647f0f5bbbb23c9699379af4f77d0f02585acacd889d5a51556bcc48af3add", dce_ast = "e7651ff687ad06d611d34d5774bd3a4f74df5a1558b64d1fa77fc74f57a6aab5", bytecode = """
+outputs = [[{ compile = [{ initial_ast = "fddba4f56016625454f5d5da3fa81487ea9b30358b35269f8bf700976590cfb9", unrolled_ast = "7836b25daf715713e524bae5b97f386467a56800e9cf2c1bf82fb8b325bf0453", ssa_ast = "4722f28fe8337f0caffc634cfb981611b3faed19ce7ee7111cc5d277cab4b6a6", flattened_ast = "909bce610a5acc7bc7ade27a07017658e57f60cf2e406a989aaad5da4cde549c", destructured_ast = "1f647f0f5bbbb23c9699379af4f77d0f02585acacd889d5a51556bcc48af3add", inlined_ast = "1f647f0f5bbbb23c9699379af4f77d0f02585acacd889d5a51556bcc48af3add", dce_ast = "5acc68aa41176e69e873b9344db0a0a658dbcbb728bbd8bda10824b805473eed", bytecode = """
 program test.aleo;
 
 function main:
@@ -165,6 +165,7 @@ function main:
     ternary r154 r156 r153 into r158;
     is.neq r158 0u32 into r159;
     add r157 1u8 into r160;
-    ternary r159 r160 r157 into r161;
-    output r161 as u8.private;
+    shr r158 1u8 into r161;
+    ternary r159 r160 r157 into r162;
+    output r162 as u8.private;
 """, errors = "", warnings = "" }] }]]
