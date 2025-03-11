@@ -48,8 +48,13 @@ impl<'a> DeadCodeEliminator<'a> {
             Access(AccessExpression::Array(array)) => sef(&array.array) && sef(&array.index),
             Access(AccessExpression::AssociatedConstant(_)) => true,
             Access(AccessExpression::AssociatedFunction(func)) => {
+                // CheatCode, Mapping, and Future operations obviously have side effects.
+                // Pedersen64 and Pedersen128 operations can halt for large inputs.
                 func.arguments.iter().all(sef)
-                    && !matches!(func.variant.name, sym::CheatCode | sym::Mapping | sym::Future)
+                    && !matches!(
+                        func.variant.name,
+                        sym::CheatCode | sym::Mapping | sym::Future | sym::Pedersen64 | sym::Pedersen128
+                    )
             }
             Access(AccessExpression::Member(mem)) => sef(&mem.inner),
             Access(AccessExpression::Tuple(tuple)) => sef(&tuple.tuple),
