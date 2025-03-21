@@ -1,0 +1,434 @@
+{
+  "Binary": {
+    "left": {
+      "Literal": {
+        "Integer": [
+          "U8",
+          "1",
+          {},
+          0
+        ]
+      }
+    },
+    "right": {
+      "Literal": {
+        "Integer": [
+          "U8",
+          "1",
+          {},
+          1
+        ]
+      }
+    },
+    "op": "Gt"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Literal": {
+        "Integer": [
+          "U8",
+          "2",
+          {},
+          0
+        ]
+      }
+    },
+    "right": {
+      "Literal": {
+        "Integer": [
+          "U8",
+          "3",
+          {},
+          1
+        ]
+      }
+    },
+    "op": "Gt"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Binary": {
+        "left": {
+          "Literal": {
+            "Integer": [
+              "U8",
+              "1",
+              {},
+              0
+            ]
+          }
+        },
+        "right": {
+          "Literal": {
+            "Integer": [
+              "U8",
+              "2",
+              {},
+              1
+            ]
+          }
+        },
+        "op": "Add"
+      }
+    },
+    "right": {
+      "Binary": {
+        "left": {
+          "Literal": {
+            "Integer": [
+              "U8",
+              "3",
+              {},
+              3
+            ]
+          }
+        },
+        "right": {
+          "Literal": {
+            "Integer": [
+              "U8",
+              "4",
+              {},
+              4
+            ]
+          }
+        },
+        "op": "Add"
+      }
+    },
+    "op": "Gt"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "Gt"
+          }
+        },
+        "op": "Negate"
+      }
+    },
+    "op": "Not"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Binary": {
+        "left": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "Gt"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "Gt"
+      }
+    },
+    "right": {
+      "Identifier": {
+        "name": "y"
+      }
+    },
+    "op": "Gt"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "Gt"
+      }
+    },
+    "op": "Negate"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "Negate"
+      }
+    },
+    "right": {
+      "Identifier": {
+        "name": "y"
+      }
+    },
+    "op": "Gt"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "Gt"
+      }
+    },
+    "op": "Negate"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Unary": {
+        "receiver": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "Gt"
+          }
+        },
+        "op": "Negate"
+      }
+    },
+    "right": {
+      "Identifier": {
+        "name": "y"
+      }
+    },
+    "op": "Gt"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "Gt"
+      }
+    },
+    "op": "Not"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "Not"
+      }
+    },
+    "right": {
+      "Identifier": {
+        "name": "y"
+      }
+    },
+    "op": "Gt"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "Gt"
+      }
+    },
+    "op": "Not"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Unary": {
+        "receiver": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "Gt"
+          }
+        },
+        "op": "Not"
+      }
+    },
+    "right": {
+      "Identifier": {
+        "name": "y"
+      }
+    },
+    "op": "Gt"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Binary": {
+        "left": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "Gt"
+          }
+        },
+        "right": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "Gt"
+          }
+        },
+        "op": "Gt"
+      }
+    },
+    "right": {
+      "Binary": {
+        "left": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "Gt"
+          }
+        },
+        "right": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "Gt"
+          }
+        },
+        "op": "Gt"
+      }
+    },
+    "op": "Gt"
+  }
+}
+

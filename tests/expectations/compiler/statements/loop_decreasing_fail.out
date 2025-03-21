@@ -1,9 +1,5 @@
-namespace = "Compile"
-expectation = "Fail"
-outputs = ["""
 Error [ELUN0379000]: The loop range must be increasing.
-    --> compiler-test:7:28
+    --> compiler-test:6:28
      |
-   7 |         for i: i8 in 10i8..5i8 {
+   6 |         for i: i8 in 10i8..5i8 {
      |                            ^^^
-"""]

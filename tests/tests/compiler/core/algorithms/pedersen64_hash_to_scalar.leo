@@ -1,7 +1,3 @@
-/*
-namespace = "Compile"
-expectation = "Fail"
-*/
 
 program test.aleo {
     struct Foo {
@@ -25,7 +21,7 @@ program test.aleo {
         let group_value: group = group::GEN;
         let scalar_value: scalar = 1scalar;
         // let string_value: string = "helloworld";
-    
+
         // Pedersen64 hash_to_scalar tests
         let a: scalar = Pedersen64::hash_to_scalar(addr_value);
         let b: scalar = Pedersen64::hash_to_scalar(bool_value);

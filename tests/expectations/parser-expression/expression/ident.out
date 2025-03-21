@@ -1,0 +1,114 @@
+{
+  "Identifier": {
+    "name": "x"
+  }
+}
+
+{
+  "Identifier": {
+    "name": "X"
+  }
+}
+
+{
+  "Identifier": {
+    "name": "xxx"
+  }
+}
+
+{
+  "Identifier": {
+    "name": "XXX"
+  }
+}
+
+{
+  "Identifier": {
+    "name": "x1"
+  }
+}
+
+{
+  "Identifier": {
+    "name": "xu32"
+  }
+}
+
+{
+  "Identifier": {
+    "name": "testx"
+  }
+}
+
+{
+  "Identifier": {
+    "name": "truex"
+  }
+}
+
+{
+  "Identifier": {
+    "name": "TRUE"
+  }
+}
+
+{
+  "Identifier": {
+    "name": "testX"
+  }
+}
+
+{
+  "Identifier": {
+    "name": "letX"
+  }
+}
+
+{
+  "Identifier": {
+    "name": "constX"
+  }
+}
+
+{
+  "Identifier": {
+    "name": "test_test"
+  }
+}
+
+{
+  "Identifier": {
+    "name": "self"
+  }
+}
+
+{
+  "Identifier": {
+    "name": "Self"
+  }
+}
+
+{
+  "Identifier": {
+    "name": "input"
+  }
+}
+
+{
+  "Identifier": {
+    "name": "selfX"
+  }
+}
+
+{
+  "Identifier": {
+    "name": "SelfX"
+  }
+}
+
+{
+  "Identifier": {
+    "name": "inputX"
+  }
+}
+

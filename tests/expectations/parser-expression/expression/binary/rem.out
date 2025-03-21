@@ -1,0 +1,475 @@
+{
+  "Binary": {
+    "left": {
+      "Literal": {
+        "Integer": [
+          "U8",
+          "1",
+          {},
+          0
+        ]
+      }
+    },
+    "right": {
+      "Literal": {
+        "Integer": [
+          "U8",
+          "1",
+          {},
+          1
+        ]
+      }
+    },
+    "op": "Rem"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Literal": {
+        "Integer": [
+          "U8",
+          "2",
+          {},
+          0
+        ]
+      }
+    },
+    "right": {
+      "Literal": {
+        "Integer": [
+          "U8",
+          "3",
+          {},
+          1
+        ]
+      }
+    },
+    "op": "Rem"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Binary": {
+        "left": {
+          "Literal": {
+            "Integer": [
+              "U8",
+              "1",
+              {},
+              0
+            ]
+          }
+        },
+        "right": {
+          "Literal": {
+            "Integer": [
+              "U8",
+              "2",
+              {},
+              1
+            ]
+          }
+        },
+        "op": "Rem"
+      }
+    },
+    "right": {
+      "Literal": {
+        "Integer": [
+          "U8",
+          "3",
+          {},
+          3
+        ]
+      }
+    },
+    "op": "Rem"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Binary": {
+        "left": {
+          "Literal": {
+            "Integer": [
+              "U8",
+              "1",
+              {},
+              0
+            ]
+          }
+        },
+        "right": {
+          "Literal": {
+            "Integer": [
+              "U8",
+              "2",
+              {},
+              1
+            ]
+          }
+        },
+        "op": "Pow"
+      }
+    },
+    "right": {
+      "Binary": {
+        "left": {
+          "Literal": {
+            "Integer": [
+              "U8",
+              "3",
+              {},
+              3
+            ]
+          }
+        },
+        "right": {
+          "Literal": {
+            "Integer": [
+              "U8",
+              "4",
+              {},
+              4
+            ]
+          }
+        },
+        "op": "Pow"
+      }
+    },
+    "op": "Rem"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "Rem"
+          }
+        },
+        "op": "Negate"
+      }
+    },
+    "op": "Not"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Binary": {
+        "left": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "Rem"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "Rem"
+      }
+    },
+    "right": {
+      "Identifier": {
+        "name": "y"
+      }
+    },
+    "op": "Rem"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "Rem"
+      }
+    },
+    "op": "Negate"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "Negate"
+      }
+    },
+    "right": {
+      "Identifier": {
+        "name": "y"
+      }
+    },
+    "op": "Rem"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "Rem"
+      }
+    },
+    "op": "Negate"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Unary": {
+        "receiver": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "Rem"
+          }
+        },
+        "op": "Negate"
+      }
+    },
+    "right": {
+      "Identifier": {
+        "name": "y"
+      }
+    },
+    "op": "Rem"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "Rem"
+      }
+    },
+    "op": "Not"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "Not"
+      }
+    },
+    "right": {
+      "Identifier": {
+        "name": "y"
+      }
+    },
+    "op": "Rem"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "Rem"
+      }
+    },
+    "op": "Not"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Unary": {
+        "receiver": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "Rem"
+          }
+        },
+        "op": "Not"
+      }
+    },
+    "right": {
+      "Identifier": {
+        "name": "y"
+      }
+    },
+    "op": "Rem"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Binary": {
+        "left": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "Rem"
+          }
+        },
+        "right": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "Rem"
+          }
+        },
+        "op": "Rem"
+      }
+    },
+    "right": {
+      "Binary": {
+        "left": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "Rem"
+          }
+        },
+        "right": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "Rem"
+          }
+        },
+        "op": "Rem"
+      }
+    },
+    "op": "Rem"
+  }
+}
+

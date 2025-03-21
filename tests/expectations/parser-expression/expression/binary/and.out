@@ -1,0 +1,412 @@
+{
+  "Binary": {
+    "left": {
+      "Literal": {
+        "Boolean": [
+          true,
+          {},
+          0
+        ]
+      }
+    },
+    "right": {
+      "Literal": {
+        "Boolean": [
+          false,
+          {},
+          1
+        ]
+      }
+    },
+    "op": "And"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Literal": {
+        "Boolean": [
+          false,
+          {},
+          0
+        ]
+      }
+    },
+    "right": {
+      "Literal": {
+        "Boolean": [
+          true,
+          {},
+          1
+        ]
+      }
+    },
+    "op": "And"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Binary": {
+        "left": {
+          "Literal": {
+            "Boolean": [
+              true,
+              {},
+              0
+            ]
+          }
+        },
+        "right": {
+          "Literal": {
+            "Boolean": [
+              false,
+              {},
+              1
+            ]
+          }
+        },
+        "op": "And"
+      }
+    },
+    "right": {
+      "Literal": {
+        "Boolean": [
+          true,
+          {},
+          3
+        ]
+      }
+    },
+    "op": "And"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "BitwiseAnd"
+          }
+        },
+        "op": "Negate"
+      }
+    },
+    "op": "Not"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Binary": {
+        "left": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "BitwiseAnd"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "BitwiseAnd"
+      }
+    },
+    "right": {
+      "Identifier": {
+        "name": "y"
+      }
+    },
+    "op": "BitwiseAnd"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "BitwiseAnd"
+      }
+    },
+    "op": "Negate"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "Negate"
+      }
+    },
+    "right": {
+      "Identifier": {
+        "name": "y"
+      }
+    },
+    "op": "BitwiseAnd"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "BitwiseAnd"
+      }
+    },
+    "op": "Negate"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Unary": {
+        "receiver": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "BitwiseAnd"
+          }
+        },
+        "op": "Negate"
+      }
+    },
+    "right": {
+      "Identifier": {
+        "name": "y"
+      }
+    },
+    "op": "BitwiseAnd"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "BitwiseAnd"
+      }
+    },
+    "op": "Not"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "Not"
+      }
+    },
+    "right": {
+      "Identifier": {
+        "name": "y"
+      }
+    },
+    "op": "BitwiseAnd"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "BitwiseAnd"
+      }
+    },
+    "op": "Not"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Unary": {
+        "receiver": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "BitwiseAnd"
+          }
+        },
+        "op": "Not"
+      }
+    },
+    "right": {
+      "Identifier": {
+        "name": "y"
+      }
+    },
+    "op": "BitwiseAnd"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Binary": {
+        "left": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "BitwiseAnd"
+          }
+        },
+        "right": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "BitwiseAnd"
+          }
+        },
+        "op": "Add"
+      }
+    },
+    "right": {
+      "Binary": {
+        "left": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "BitwiseAnd"
+          }
+        },
+        "right": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "BitwiseAnd"
+          }
+        },
+        "op": "Add"
+      }
+    },
+    "op": "BitwiseAnd"
+  }
+}
+

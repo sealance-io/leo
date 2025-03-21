@@ -1,0 +1,180 @@
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Unary": {
+            "receiver": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "op": "SquareRoot"
+          }
+        },
+        "op": "Negate"
+      }
+    },
+    "op": "Not"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Unary": {
+            "receiver": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "op": "SquareRoot"
+          }
+        },
+        "op": "SquareRoot"
+      }
+    },
+    "op": "SquareRoot"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "SquareRoot"
+      }
+    },
+    "op": "Negate"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "Negate"
+      }
+    },
+    "op": "SquareRoot"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "SquareRoot"
+      }
+    },
+    "op": "Negate"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Unary": {
+            "receiver": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "op": "SquareRoot"
+          }
+        },
+        "op": "Negate"
+      }
+    },
+    "op": "SquareRoot"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "SquareRoot"
+      }
+    },
+    "op": "Not"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "Not"
+      }
+    },
+    "op": "SquareRoot"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "SquareRoot"
+      }
+    },
+    "op": "Not"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Unary": {
+            "receiver": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "op": "SquareRoot"
+          }
+        },
+        "op": "Not"
+      }
+    },
+    "op": "SquareRoot"
+  }
+}
+

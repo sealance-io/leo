@@ -1,6 +1,3 @@
-namespace = "Compile"
-expectation = "Pass"
-outputs = [[{ compile = [{ initial_ast = "9873ff758c10d6da0f990191e58448d7ce86eefdefcc552dadfa22704ae4b67c", unrolled_ast = "5a40cc65808c42c9b3a6a77a93b67e6deb71f6616d9672b5281788479ead1f64", ssa_ast = "9e4dae9ba00f5b011320455bec052c129b3944e82da19d026c4f0969242def0d", flattened_ast = "c11d4c905aa407d61c27f647c53f633417262e2c5ee1849b683bcafb53d8d765", destructured_ast = "3d5cb27ebd5b326ff38ad63e539639e2fc7aabca90235d8219c170941281c966", inlined_ast = "3d5cb27ebd5b326ff38ad63e539639e2fc7aabca90235d8219c170941281c966", dce_ast = "4d740542195f0ab2c6a07a5e3fb26422525738fd952536c1e3fd13df7135c751", bytecode = """
 program test.aleo;
 
 struct Foo:
@@ -16,5 +13,18 @@ function main:
     input r5 as u16.private;
     input r6 as u32.private;
     input r7 as u64.private;
+    commit.bhp1024 aleo10qerras5799u6k7rjtc9y3hcwxuykr45qra7x7dp6jgnc0923czqm0lgta 1scalar into r8 as address;
+    commit.bhp1024 true 1scalar into r9 as address;
+    commit.bhp1024 1field 1scalar into r10 as address;
+    commit.bhp1024 r0 1scalar into r11 as address;
+    commit.bhp1024 r1 1scalar into r12 as address;
+    commit.bhp1024 r2 1scalar into r13 as address;
+    commit.bhp1024 r3 1scalar into r14 as address;
+    commit.bhp1024 1i128 1scalar into r15 as address;
+    commit.bhp1024 r4 1scalar into r16 as address;
+    commit.bhp1024 r5 1scalar into r17 as address;
+    commit.bhp1024 r6 1scalar into r18 as address;
+    commit.bhp1024 r7 1scalar into r19 as address;
+    commit.bhp1024 1u128 1scalar into r20 as address;
+    commit.bhp1024 1scalar 1scalar into r21 as address;
     output 1field as field.private;
-""", errors = "", warnings = "" }] }]]

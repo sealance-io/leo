@@ -1,0 +1,602 @@
+{
+  "Binary": {
+    "left": {
+      "Literal": {
+        "Integer": [
+          "U8",
+          "1",
+          {},
+          0
+        ]
+      }
+    },
+    "right": {
+      "Literal": {
+        "Integer": [
+          "U8",
+          "1",
+          {},
+          1
+        ]
+      }
+    },
+    "op": "Shr"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Literal": {
+        "Integer": [
+          "U8",
+          "2",
+          {},
+          0
+        ]
+      }
+    },
+    "right": {
+      "Literal": {
+        "Integer": [
+          "U8",
+          "3",
+          {},
+          1
+        ]
+      }
+    },
+    "op": "Shr"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Binary": {
+        "left": {
+          "Literal": {
+            "Integer": [
+              "U8",
+              "1",
+              {},
+              0
+            ]
+          }
+        },
+        "right": {
+          "Literal": {
+            "Integer": [
+              "U8",
+              "2",
+              {},
+              1
+            ]
+          }
+        },
+        "op": "Shr"
+      }
+    },
+    "right": {
+      "Literal": {
+        "Integer": [
+          "U8",
+          "3",
+          {},
+          3
+        ]
+      }
+    },
+    "op": "Shr"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Binary": {
+        "left": {
+          "Literal": {
+            "Integer": [
+              "U8",
+              "1",
+              {},
+              0
+            ]
+          }
+        },
+        "right": {
+          "Literal": {
+            "Integer": [
+              "U8",
+              "2",
+              {},
+              1
+            ]
+          }
+        },
+        "op": "Add"
+      }
+    },
+    "right": {
+      "Binary": {
+        "left": {
+          "Literal": {
+            "Integer": [
+              "U8",
+              "3",
+              {},
+              3
+            ]
+          }
+        },
+        "right": {
+          "Literal": {
+            "Integer": [
+              "U8",
+              "4",
+              {},
+              4
+            ]
+          }
+        },
+        "op": "Add"
+      }
+    },
+    "op": "Shr"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Binary": {
+        "left": {
+          "Literal": {
+            "Integer": [
+              "U8",
+              "1",
+              {},
+              0
+            ]
+          }
+        },
+        "right": {
+          "Literal": {
+            "Integer": [
+              "U8",
+              "2",
+              {},
+              1
+            ]
+          }
+        },
+        "op": "Shr"
+      }
+    },
+    "right": {
+      "Literal": {
+        "Integer": [
+          "U8",
+          "3",
+          {},
+          3
+        ]
+      }
+    },
+    "op": "Shr"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Binary": {
+        "left": {
+          "Binary": {
+            "left": {
+              "Literal": {
+                "Integer": [
+                  "U8",
+                  "1",
+                  {},
+                  0
+                ]
+              }
+            },
+            "right": {
+              "Literal": {
+                "Integer": [
+                  "U8",
+                  "2",
+                  {},
+                  1
+                ]
+              }
+            },
+            "op": "Add"
+          }
+        },
+        "right": {
+          "Binary": {
+            "left": {
+              "Literal": {
+                "Integer": [
+                  "U8",
+                  "3",
+                  {},
+                  3
+                ]
+              }
+            },
+            "right": {
+              "Literal": {
+                "Integer": [
+                  "U8",
+                  "4",
+                  {},
+                  4
+                ]
+              }
+            },
+            "op": "Add"
+          }
+        },
+        "op": "Shr"
+      }
+    },
+    "right": {
+      "Binary": {
+        "left": {
+          "Literal": {
+            "Integer": [
+              "U8",
+              "5",
+              {},
+              7
+            ]
+          }
+        },
+        "right": {
+          "Literal": {
+            "Integer": [
+              "U8",
+              "6",
+              {},
+              8
+            ]
+          }
+        },
+        "op": "Add"
+      }
+    },
+    "op": "Shr"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "Shr"
+          }
+        },
+        "op": "Negate"
+      }
+    },
+    "op": "Not"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Binary": {
+        "left": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "Shr"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "Shr"
+      }
+    },
+    "right": {
+      "Identifier": {
+        "name": "y"
+      }
+    },
+    "op": "Shr"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "Shr"
+      }
+    },
+    "op": "Negate"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "Negate"
+      }
+    },
+    "right": {
+      "Identifier": {
+        "name": "y"
+      }
+    },
+    "op": "Shr"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "Shr"
+      }
+    },
+    "op": "Negate"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Unary": {
+        "receiver": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "Shr"
+          }
+        },
+        "op": "Negate"
+      }
+    },
+    "right": {
+      "Identifier": {
+        "name": "y"
+      }
+    },
+    "op": "Shr"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "Shr"
+      }
+    },
+    "op": "Not"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "Not"
+      }
+    },
+    "right": {
+      "Identifier": {
+        "name": "y"
+      }
+    },
+    "op": "Shr"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "Shr"
+      }
+    },
+    "op": "Not"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Unary": {
+        "receiver": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "Shr"
+          }
+        },
+        "op": "Not"
+      }
+    },
+    "right": {
+      "Identifier": {
+        "name": "y"
+      }
+    },
+    "op": "Shr"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Binary": {
+        "left": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "Shr"
+          }
+        },
+        "right": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "Shr"
+          }
+        },
+        "op": "Shr"
+      }
+    },
+    "right": {
+      "Binary": {
+        "left": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "Shr"
+          }
+        },
+        "right": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "y"
+              }
+            },
+            "op": "Shr"
+          }
+        },
+        "op": "Shr"
+      }
+    },
+    "op": "Shr"
+  }
+}
+

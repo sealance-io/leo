@@ -1,6 +1,3 @@
-namespace = "Compile"
-expectation = "Pass"
-outputs = [[{ compile = [{ initial_ast = "22e5ae5968afbbe73a278a85fbbe7839c91f8a6ae8b2a2ebc47b0f7c27b7b32c", unrolled_ast = "d5df0b6698433a199efdf2ad61f3acb9e9fc5ed9e25e2919b68466369d7b0921", ssa_ast = "f0e5aa5152676afacef28c77dec3e7360d19aa8b61192b13a6f22f3ce369a060", flattened_ast = "7c61564221aac1eb77c18f5c668750b07331386e961dec98598d57bb66d92910", destructured_ast = "272f6715fa323c113226d14fa02b163f25cf82335912a389d7807064eb90d70a", inlined_ast = "272f6715fa323c113226d14fa02b163f25cf82335912a389d7807064eb90d70a", dce_ast = "00ed940bf82e4c317136be3a889e7aaa00ed071a6a3d405a25a74ab5bb59833c", bytecode = """
 program test.aleo;
 
 function main:
@@ -160,37 +157,38 @@ function main:
     is.neq r0 0u32 into r153;
     and r150 r152 into r154;
     and r154 r153 into r155;
-    ternary r155 31u8 32u8 into r156;
-    ternary r151 30u8 r156 into r157;
-    ternary r146 29u8 r157 into r158;
-    ternary r144 28u8 r158 into r159;
-    ternary r136 27u8 r159 into r160;
-    ternary r134 26u8 r160 into r161;
-    ternary r129 25u8 r161 into r162;
-    ternary r127 24u8 r162 into r163;
-    ternary r116 23u8 r163 into r164;
-    ternary r114 22u8 r164 into r165;
-    ternary r109 21u8 r165 into r166;
-    ternary r107 20u8 r166 into r167;
-    ternary r99 19u8 r167 into r168;
-    ternary r97 18u8 r168 into r169;
-    ternary r92 17u8 r169 into r170;
-    ternary r90 16u8 r170 into r171;
-    ternary r77 15u8 r171 into r172;
-    ternary r75 14u8 r172 into r173;
-    ternary r70 13u8 r173 into r174;
-    ternary r68 12u8 r174 into r175;
-    ternary r60 11u8 r175 into r176;
-    ternary r58 10u8 r176 into r177;
-    ternary r53 9u8 r177 into r178;
-    ternary r51 8u8 r178 into r179;
-    ternary r40 7u8 r179 into r180;
-    ternary r38 6u8 r180 into r181;
-    ternary r33 5u8 r181 into r182;
-    ternary r31 4u8 r182 into r183;
-    ternary r23 3u8 r183 into r184;
-    ternary r21 2u8 r184 into r185;
-    ternary r16 1u8 r185 into r186;
-    ternary r14 0u8 r186 into r187;
-    output r187 as u8.private;
-""", errors = "", warnings = "" }] }]]
+    not r153 into r156;
+    and r154 r156 into r157;
+    ternary r155 31u8 32u8 into r158;
+    ternary r151 30u8 r158 into r159;
+    ternary r146 29u8 r159 into r160;
+    ternary r144 28u8 r160 into r161;
+    ternary r136 27u8 r161 into r162;
+    ternary r134 26u8 r162 into r163;
+    ternary r129 25u8 r163 into r164;
+    ternary r127 24u8 r164 into r165;
+    ternary r116 23u8 r165 into r166;
+    ternary r114 22u8 r166 into r167;
+    ternary r109 21u8 r167 into r168;
+    ternary r107 20u8 r168 into r169;
+    ternary r99 19u8 r169 into r170;
+    ternary r97 18u8 r170 into r171;
+    ternary r92 17u8 r171 into r172;
+    ternary r90 16u8 r172 into r173;
+    ternary r77 15u8 r173 into r174;
+    ternary r75 14u8 r174 into r175;
+    ternary r70 13u8 r175 into r176;
+    ternary r68 12u8 r176 into r177;
+    ternary r60 11u8 r177 into r178;
+    ternary r58 10u8 r178 into r179;
+    ternary r53 9u8 r179 into r180;
+    ternary r51 8u8 r180 into r181;
+    ternary r40 7u8 r181 into r182;
+    ternary r38 6u8 r182 into r183;
+    ternary r33 5u8 r183 into r184;
+    ternary r31 4u8 r184 into r185;
+    ternary r23 3u8 r185 into r186;
+    ternary r21 2u8 r186 into r187;
+    ternary r16 1u8 r187 into r188;
+    ternary r14 0u8 r188 into r189;
+    output r189 as u8.private;

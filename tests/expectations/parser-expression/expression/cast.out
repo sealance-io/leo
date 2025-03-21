@@ -1,0 +1,159 @@
+{
+  "Cast": {
+    "expression": {
+      "Identifier": {
+        "name": "foo"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    }
+  }
+}
+
+{
+  "Cast": {
+    "expression": {
+      "Literal": {
+        "Integer": [
+          "U128",
+          "1",
+          {},
+          0
+        ]
+      }
+    },
+    "type_": {
+      "Integer": "I8"
+    }
+  }
+}
+
+{
+  "Cast": {
+    "expression": {
+      "Struct": {
+        "name": {
+          "name": "baz"
+        },
+        "members": [
+          {
+            "identifier": {
+              "name": "foo"
+            },
+            "expression": {
+              "Identifier": {
+                "name": "u8"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "type_": "Scalar"
+  }
+}
+
+{
+  "Ternary": {
+    "condition": {
+      "Identifier": {
+        "name": "flag"
+      }
+    },
+    "if_true": {
+      "Literal": {
+        "Integer": [
+          "U8",
+          "1",
+          {},
+          1
+        ]
+      }
+    },
+    "if_false": {
+      "Cast": {
+        "expression": {
+          "Literal": {
+            "Integer": [
+              "U8",
+              "0",
+              {},
+              2
+            ]
+          }
+        },
+        "type_": "Scalar"
+      }
+    }
+  }
+}
+
+{
+  "Cast": {
+    "expression": {
+      "Ternary": {
+        "condition": {
+          "Identifier": {
+            "name": "flag"
+          }
+        },
+        "if_true": {
+          "Literal": {
+            "Integer": [
+              "U8",
+              "1",
+              {},
+              1
+            ]
+          }
+        },
+        "if_false": {
+          "Literal": {
+            "Integer": [
+              "U8",
+              "0",
+              {},
+              2
+            ]
+          }
+        }
+      }
+    },
+    "type_": "Scalar"
+  }
+}
+
+{
+  "Cast": {
+    "expression": {
+      "Literal": {
+        "Integer": [
+          "I8",
+          "34",
+          {},
+          0
+        ]
+      }
+    },
+    "type_": "Field"
+  }
+}
+
+{
+  "Cast": {
+    "expression": {
+      "Literal": {
+        "Field": [
+          "0925348043850",
+          {},
+          0
+        ]
+      }
+    },
+    "type_": {
+      "Integer": "I8"
+    }
+  }
+}
+

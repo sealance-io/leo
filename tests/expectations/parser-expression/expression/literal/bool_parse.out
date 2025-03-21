@@ -1,0 +1,20 @@
+{
+  "Literal": {
+    "Boolean": [
+      true,
+      {},
+      0
+    ]
+  }
+}
+
+{
+  "Literal": {
+    "Boolean": [
+      false,
+      {},
+      0
+    ]
+  }
+}
+

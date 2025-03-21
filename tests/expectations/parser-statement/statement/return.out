@@ -1,0 +1,25 @@
+{
+  "Return": {
+    "expression": {
+      "Identifier": {
+        "name": "expr"
+      }
+    }
+  }
+}
+
+{
+  "Return": {
+    "expression": {
+      "Literal": {
+        "Integer": [
+          "U8",
+          "5",
+          {},
+          0
+        ]
+      }
+    }
+  }
+}
+

@@ -1,9 +1,5 @@
-namespace = "Compile"
-expectation = "Fail"
-outputs = ["""
 Error [ETYC0372066]: `self.caller` is not a valid operand in an async function call context.
-    --> compiler-test:8:30
+    --> compiler-test:7:30
      |
-   8 |         assert_eq(addr, self.caller);
+   7 |         assert_eq(addr, self.caller);
      |                              ^^^^^^
-"""]

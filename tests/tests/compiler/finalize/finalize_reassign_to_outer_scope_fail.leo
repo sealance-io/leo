@@ -1,7 +1,3 @@
-/*
-namespace = "Compile"
-expectation = "Fail"
-[[configs]]
 dce_enabled = false
 */
 

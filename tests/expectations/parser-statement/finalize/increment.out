@@ -1,0 +1,117 @@
+{
+  "Expression": {
+    "expression": {
+      "Call": {
+        "function": {
+          "Identifier": {
+            "name": "increment"
+          }
+        },
+        "arguments": [
+          {
+            "Identifier": {
+              "name": "foo"
+            }
+          },
+          {
+            "Identifier": {
+              "name": "bar"
+            }
+          },
+          {
+            "Identifier": {
+              "name": "baz"
+            }
+          }
+        ],
+        "program": null
+      }
+    }
+  }
+}
+
+{
+  "Expression": {
+    "expression": {
+      "Call": {
+        "function": {
+          "Identifier": {
+            "name": "increment"
+          }
+        },
+        "arguments": [
+          {
+            "Identifier": {
+              "name": "foo"
+            }
+          },
+          {
+            "Literal": {
+              "Integer": [
+                "U8",
+                "2",
+                {},
+                2
+              ]
+            }
+          },
+          {
+            "Literal": {
+              "Integer": [
+                "U8",
+                "3",
+                {},
+                3
+              ]
+            }
+          }
+        ],
+        "program": null
+      }
+    }
+  }
+}
+
+{
+  "Expression": {
+    "expression": {
+      "Call": {
+        "function": {
+          "Identifier": {
+            "name": "increment"
+          }
+        },
+        "arguments": [
+          {
+            "Identifier": {
+              "name": "foo"
+            }
+          },
+          {
+            "Identifier": {
+              "name": "bar"
+            }
+          }
+        ],
+        "program": null
+      }
+    }
+  }
+}
+
+{
+  "Expression": {
+    "expression": {
+      "Call": {
+        "function": {
+          "Identifier": {
+            "name": "increment"
+          }
+        },
+        "arguments": [],
+        "program": null
+      }
+    }
+  }
+}
+

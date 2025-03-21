@@ -1,0 +1,101 @@
+{
+  "Block": {
+    "statements": []
+  }
+}
+
+{
+  "Block": {
+    "statements": [
+      {
+        "Return": {
+          "expression": {
+            "Literal": {
+              "Integer": [
+                "U8",
+                "0",
+                {},
+                0
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}
+
+{
+  "Block": {
+    "statements": [
+      {
+        "Block": {
+          "statements": []
+        }
+      }
+    ]
+  }
+}
+
+{
+  "Block": {
+    "statements": [
+      {
+        "Block": {
+          "statements": [
+            {
+              "Return": {
+                "expression": {
+                  "Literal": {
+                    "Integer": [
+                      "U8",
+                      "0",
+                      {},
+                      0
+                    ]
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+
+{
+  "Block": {
+    "statements": [
+      {
+        "Conditional": {
+          "condition": {
+            "Identifier": {
+              "name": "x"
+            }
+          },
+          "then": {
+            "statements": [
+              {
+                "Return": {
+                  "expression": {
+                    "Literal": {
+                      "Integer": [
+                        "U8",
+                        "0",
+                        {},
+                        1
+                      ]
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "otherwise": null
+        }
+      }
+    ]
+  }
+}
+

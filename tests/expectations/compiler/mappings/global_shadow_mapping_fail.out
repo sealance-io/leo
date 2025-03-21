@@ -1,9 +1,5 @@
-namespace = "Compile"
-expectation = "Fail"
-outputs = ["""
 Error [EAST0372009]: variable `one` shadowed by
-    --> compiler-test:6:5
+    --> compiler-test:5:5
      |
-   6 |     mapping one: field => field;
+   5 |     mapping one: field => field;
      |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-"""]

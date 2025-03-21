@@ -1,9 +1,5 @@
-namespace = "Compile"
-expectation = "Fail"
-outputs = ["""
 Error [EAST0372009]: variable `HELLO` shadowed by
-    --> compiler-test:5:11
+    --> compiler-test:4:11
      |
-   5 |     const HELLO: u8 = 1u8;
+   4 |     const HELLO: u8 = 1u8;
      |           ^^^^^
-"""]

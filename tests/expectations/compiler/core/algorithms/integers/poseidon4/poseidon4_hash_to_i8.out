@@ -1,6 +1,3 @@
-namespace = "Compile"
-expectation = "Pass"
-outputs = [[{ compile = [{ initial_ast = "fe3121c5c80553ab5612bf475745db23fd25d3b76aec71d6d25cb1b50d5ff712", unrolled_ast = "70085adc1541bc8a0533550a75bebaed000db9b748504d1e1aa2d6b0638e853c", ssa_ast = "a6fdd419cccbce0e79a936c5f422748ee394bd74e4702a9f24ff6c39d81942e7", flattened_ast = "82b57644f9868d350fa10c871de9ed7e3262a8d0eae0b2513a05b2df1832ab20", destructured_ast = "a4dfc3256e3353401a9587d98e46cd978556085449511b6036699f9d3f6408d8", inlined_ast = "a4dfc3256e3353401a9587d98e46cd978556085449511b6036699f9d3f6408d8", dce_ast = "3eb4ab57e8a083f7b43248da7c32fa353ec8e1526b94638c8614c215345f36b8", bytecode = """
 program test.aleo;
 
 struct Foo:
@@ -17,5 +14,18 @@ function main:
     input r6 as u32.private;
     input r7 as u64.private;
     hash.psd4 aleo10qerras5799u6k7rjtc9y3hcwxuykr45qra7x7dp6jgnc0923czqm0lgta into r8 as i8;
+    hash.psd4 true into r9 as i8;
+    hash.psd4 1field into r10 as i8;
+    hash.psd4 1540945439182663264862696551825005342995406165131907382295858612069623286213group into r11 as i8;
+    hash.psd4 r0 into r12 as i8;
+    hash.psd4 r1 into r13 as i8;
+    hash.psd4 r2 into r14 as i8;
+    hash.psd4 r3 into r15 as i8;
+    hash.psd4 1i128 into r16 as i8;
+    hash.psd4 r4 into r17 as i8;
+    hash.psd4 r5 into r18 as i8;
+    hash.psd4 r6 into r19 as i8;
+    hash.psd4 r7 into r20 as i8;
+    hash.psd4 1u128 into r21 as i8;
+    hash.psd4 1scalar into r22 as i8;
     output r8 as i8.private;
-""", errors = "", warnings = "" }] }]]

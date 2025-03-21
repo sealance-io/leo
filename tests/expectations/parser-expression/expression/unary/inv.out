@@ -1,0 +1,170 @@
+{
+  "Unary": {
+    "receiver": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "op": "Inverse"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Unary": {
+            "receiver": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "op": "Inverse"
+          }
+        },
+        "op": "Inverse"
+      }
+    },
+    "op": "Inverse"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "Inverse"
+      }
+    },
+    "op": "Negate"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "Negate"
+      }
+    },
+    "op": "Inverse"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "Inverse"
+      }
+    },
+    "op": "Negate"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Unary": {
+            "receiver": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "op": "Inverse"
+          }
+        },
+        "op": "Negate"
+      }
+    },
+    "op": "Inverse"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "Inverse"
+      }
+    },
+    "op": "Not"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "Not"
+      }
+    },
+    "op": "Inverse"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "Inverse"
+      }
+    },
+    "op": "Not"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Unary": {
+            "receiver": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "op": "Inverse"
+          }
+        },
+        "op": "Not"
+      }
+    },
+    "op": "Inverse"
+  }
+}
+

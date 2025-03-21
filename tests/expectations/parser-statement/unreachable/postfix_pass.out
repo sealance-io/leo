@@ -1,0 +1,475 @@
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "aimport"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "a_"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "aas"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "aconsole"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "aconst"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "alet"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "afor"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "aif"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "aelse"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "ai8"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "ai16"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "ai32"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "ai64"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "ai128"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "au8"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "au16"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "au32"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "au64"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "au128"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "areturn"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "aself"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "aSelf"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "atrue"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "afalse"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "a0"
+      }
+    }
+  }
+}
+

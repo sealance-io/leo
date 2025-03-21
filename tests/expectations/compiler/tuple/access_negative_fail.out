@@ -1,8 +1,5 @@
-namespace = "Compile"
-expectation = "Fail"
-outputs = ["""
 Error [EPAR0370009]: unexpected string: expected 'identifier', found '-'
-    --> compiler-test:7:24
+    --> compiler-test:6:24
      |
-   7 |         return (t.0, t.-1); // Index `t.-1` is invalid.
-     |                        ^"""]
+   6 |         return (t.0, t.-1); // Index `t.-1` is invalid.
+     |                        ^

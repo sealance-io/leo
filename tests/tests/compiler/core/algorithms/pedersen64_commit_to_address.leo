@@ -1,7 +1,3 @@
-/*
-namespace = "Compile"
-expectation = "Fail"
-*/
 
 program test.aleo {
     struct Foo {
@@ -25,7 +21,7 @@ program test.aleo {
         let group_value: group = group::GEN;
         let scalar_value: scalar = 1scalar;
         // let string_value: string = "helloworld";
-    
+
         // Pedersen64 commit_to_address tests
         let a: address = Pedersen64::commit_to_address(addr_value, scalar_value);
         let b: address = Pedersen64::commit_to_address(bool_value, scalar_value);

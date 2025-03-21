@@ -1,0 +1,27 @@
+Error [EPAR0370005]: expected ] -- found ','
+    --> test_0:1:14
+     |
+   1 | increment[foo, bar, baz];
+     |              ^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_1:1:15
+     |
+   1 | increment(floo)
+     |               ^
+Warning [WPAR0370001]: The keyword `increment` is deprecated.
+    --> test_1:1:1
+     |
+   1 | increment(floo)
+     | ^^^^^^^^^^^^^^^
+     |
+     = Use `Mapping::{get, get_or_use, set, remove, contains}` for manipulating on-chain mappings.
+
+Error [EPAR0370005]: expected ; -- found 'foo'
+    --> test_2:1:11
+     |
+   1 | increment foo[bar] by baz;
+     |           ^^^
+
+

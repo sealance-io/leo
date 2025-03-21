@@ -1,6 +1,3 @@
-namespace = "Compile"
-expectation = "Pass"
-outputs = [[{ compile = [{ initial_ast = "286e0bbcf36112e627140c68ff02f5fdcb6b0afae53c7b4645243aea1adf179d", unrolled_ast = "9f964fc8d192d8e56140e4d49d216b5d39eb46e451c77c1c5d391a595476bae9", ssa_ast = "45b3af11f2e2038890a24fd4b6edbe90d14d4ca4260170531bc21f7bfe2deae7", flattened_ast = "c0ff969e2ef34dedb489a7eb010289c2e7aee03f754f95edb6a1c1c399d77415", destructured_ast = "f774ceacf21981fd0e879038b7357ab13ff3e7a5b700c32bba0304751e3ca714", inlined_ast = "219362c945714a83b2eddbdc651955e922c65298f9510aac26625a2ecc3f88dc", dce_ast = "219362c945714a83b2eddbdc651955e922c65298f9510aac26625a2ecc3f88dc", bytecode = """
 program vote.aleo;
 
 struct ProposalInfo:
@@ -81,4 +78,3 @@ finalize disagree:
     get.or_use disagree_votes[r0] 0u64 into r1;
     add r1 1u64 into r2;
     set r2 into disagree_votes[r0];
-""", errors = "", warnings = "" }] }]]

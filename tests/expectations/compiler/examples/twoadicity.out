@@ -1,6 +1,3 @@
-namespace = "Compile"
-expectation = "Pass"
-outputs = [[{ compile = [{ initial_ast = "47423bb725b42e8571e55829ae6784b52be84366628d4ac08716969cabca10ac", unrolled_ast = "831712a5291c978be4c8eae3631b08ad6efba79d1ebfeccf7bf0ca7181077f59", ssa_ast = "8dfed7103c10bb68184eedc20b7049a09cf941f7eea7403fa26719c431b7b434", flattened_ast = "e5b3f146cf74d360f0e4994d1debb8f5986e1494f515c2de3ea3fcdc8daf1a08", destructured_ast = "5c41c9a1c15a824a3ce66737793043403e744c5e407727b824141be69bdbc930", inlined_ast = "3fe47fa9b33ca03098f08fdee1c46407a1cc6575a66145f66c43da58da58da54", dce_ast = "8d1b7dd86ffec35ee5717223a55ca8f5e8f858a410d4b597e1d2a1c5a682087a", bytecode = """
 program test.aleo;
 
 closure is_even_and_nonzero:
@@ -1267,7 +1264,8 @@ function main:
     ternary r1251 r1252 r1249 into r1254;
     ternary r1251 r1253 r1250 into r1255;
     call is_even_and_nonzero r1254 into r1256;
-    add r1255 1u8 into r1257;
-    ternary r1256 r1257 r1255 into r1258;
-    output r1258 as u8.private;
-""", errors = "", warnings = "" }] }]]
+    div r1254 2field into r1257;
+    add r1255 1u8 into r1258;
+    ternary r1256 r1257 r1254 into r1259;
+    ternary r1256 r1258 r1255 into r1260;
+    output r1260 as u8.private;

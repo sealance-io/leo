@@ -1,0 +1,190 @@
+{
+  "Binary": {
+    "left": {
+      "Literal": {
+        "Boolean": [
+          true,
+          {},
+          0
+        ]
+      }
+    },
+    "right": {
+      "Literal": {
+        "Boolean": [
+          true,
+          {},
+          1
+        ]
+      }
+    },
+    "op": "Or"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Literal": {
+        "Boolean": [
+          false,
+          {},
+          0
+        ]
+      }
+    },
+    "right": {
+      "Literal": {
+        "Boolean": [
+          true,
+          {},
+          1
+        ]
+      }
+    },
+    "op": "Or"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Binary": {
+        "left": {
+          "Literal": {
+            "Boolean": [
+              true,
+              {},
+              0
+            ]
+          }
+        },
+        "right": {
+          "Literal": {
+            "Boolean": [
+              false,
+              {},
+              1
+            ]
+          }
+        },
+        "op": "Or"
+      }
+    },
+    "right": {
+      "Literal": {
+        "Boolean": [
+          false,
+          {},
+          3
+        ]
+      }
+    },
+    "op": "Or"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Binary": {
+        "left": {
+          "Binary": {
+            "left": {
+              "Literal": {
+                "Boolean": [
+                  true,
+                  {},
+                  0
+                ]
+              }
+            },
+            "right": {
+              "Literal": {
+                "Boolean": [
+                  false,
+                  {},
+                  1
+                ]
+              }
+            },
+            "op": "Or"
+          }
+        },
+        "right": {
+          "Literal": {
+            "Boolean": [
+              true,
+              {},
+              3
+            ]
+          }
+        },
+        "op": "Or"
+      }
+    },
+    "right": {
+      "Literal": {
+        "Boolean": [
+          false,
+          {},
+          5
+        ]
+      }
+    },
+    "op": "Or"
+  }
+}
+
+{
+  "Binary": {
+    "left": {
+      "Binary": {
+        "left": {
+          "Literal": {
+            "Boolean": [
+              true,
+              {},
+              0
+            ]
+          }
+        },
+        "right": {
+          "Binary": {
+            "left": {
+              "Literal": {
+                "Boolean": [
+                  true,
+                  {},
+                  1
+                ]
+              }
+            },
+            "right": {
+              "Literal": {
+                "Boolean": [
+                  false,
+                  {},
+                  2
+                ]
+              }
+            },
+            "op": "Or"
+          }
+        },
+        "op": "Or"
+      }
+    },
+    "right": {
+      "Literal": {
+        "Boolean": [
+          true,
+          {},
+          5
+        ]
+      }
+    },
+    "op": "Or"
+  }
+}
+

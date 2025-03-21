@@ -1,0 +1,170 @@
+{
+  "Unary": {
+    "receiver": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "op": "AbsWrapped"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Unary": {
+            "receiver": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "op": "AbsWrapped"
+          }
+        },
+        "op": "AbsWrapped"
+      }
+    },
+    "op": "AbsWrapped"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "AbsWrapped"
+      }
+    },
+    "op": "Negate"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "Negate"
+      }
+    },
+    "op": "AbsWrapped"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "AbsWrapped"
+      }
+    },
+    "op": "Negate"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Unary": {
+            "receiver": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "op": "AbsWrapped"
+          }
+        },
+        "op": "Negate"
+      }
+    },
+    "op": "AbsWrapped"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "AbsWrapped"
+      }
+    },
+    "op": "Not"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "Not"
+      }
+    },
+    "op": "AbsWrapped"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "AbsWrapped"
+      }
+    },
+    "op": "Not"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Unary": {
+            "receiver": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "op": "AbsWrapped"
+          }
+        },
+        "op": "Not"
+      }
+    },
+    "op": "AbsWrapped"
+  }
+}
+

@@ -1,6 +1,3 @@
-namespace = "Compile"
-expectation = "Pass"
-outputs = [[{ compile = [{ initial_ast = "cab8003802752190e7c4f2864bed533921b8b034aca69ac4bc5a1edb5106816c", unrolled_ast = "d4aab54b08becb45c83ffeff530e23b2d5e7df3c4672c053e5462ddcd400f606", ssa_ast = "2179aaf2a16cd2306b3d931320eae90f333a1673b68b75f992ea675ee84d22e8", flattened_ast = "995d9a6c8121d47a5a68956d838f3d4509131922275fabb85d2a128e1da27181", destructured_ast = "66470df9a81fab0e8d2be29a6384ca73550390933809a7bb3ef07eb9064c2133", inlined_ast = "66470df9a81fab0e8d2be29a6384ca73550390933809a7bb3ef07eb9064c2133", dce_ast = "b9ebbb226ac19009a6fe6bfc43af8b03226a086a762bad48931f3903077e7f48", bytecode = """
 program test.aleo;
 
 struct Foo:
@@ -17,7 +14,19 @@ function main:
     input r6 as u32.private;
     input r7 as u64.private;
     hash.keccak256 aleo10qerras5799u6k7rjtc9y3hcwxuykr45qra7x7dp6jgnc0923czqm0lgta into r8 as field;
-    hash.keccak256 1scalar into r9 as field;
-    add r8 r9 into r10;
-    output r10 as field.private;
-""", errors = "", warnings = "" }] }]]
+    hash.keccak256 true into r9 as field;
+    hash.keccak256 1field into r10 as field;
+    hash.keccak256 1540945439182663264862696551825005342995406165131907382295858612069623286213group into r11 as field;
+    hash.keccak256 r0 into r12 as field;
+    hash.keccak256 r1 into r13 as field;
+    hash.keccak256 r2 into r14 as field;
+    hash.keccak256 r3 into r15 as field;
+    hash.keccak256 1i128 into r16 as field;
+    hash.keccak256 r4 into r17 as field;
+    hash.keccak256 r5 into r18 as field;
+    hash.keccak256 r6 into r19 as field;
+    hash.keccak256 r7 into r20 as field;
+    hash.keccak256 1u128 into r21 as field;
+    hash.keccak256 1scalar into r22 as field;
+    add r8 r22 into r23;
+    output r23 as field.private;

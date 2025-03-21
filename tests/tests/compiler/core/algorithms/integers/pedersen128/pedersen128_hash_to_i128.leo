@@ -1,14 +1,10 @@
-/*
-namespace = "Compile"
-expectation = "Fail"
-*/
 
-program test.aleo {    
+program test.aleo {
     struct Foo {
         a: u32,
         b: u32,
     }
-    
+
     transition main(
         i8_value: i8,
         i16_value: i16,
@@ -25,7 +21,7 @@ program test.aleo {
         let group_value: group = group::GEN;
         let scalar_value: scalar = 1scalar;
         // let string_value: string = "helloworld";
-    
+
         // Pedersen128 hash_to_i128 tests
         let a: i128 = Pedersen128::hash_to_i128(addr_value);
         let b: i128 = Pedersen128::hash_to_i128(bool_value);
@@ -42,7 +38,7 @@ program test.aleo {
         let o: i128 = Pedersen128::hash_to_i128(scalar_value);
         // let p: i128 = Pedersen128::hash_to_i128(string_value);
         let q: i128 = Pedersen128::hash_to_i128(Foo { a: 1u32, b: 1u32, });
-    
+
         return a;
     }
 }

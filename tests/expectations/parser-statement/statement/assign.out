@@ -1,0 +1,61 @@
+{
+  "Assign": {
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "value": {
+      "Identifier": {
+        "name": "expr"
+      }
+    }
+  }
+}
+
+{
+  "Assign": {
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "value": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "Add"
+      }
+    }
+  }
+}
+
+{
+  "Assign": {
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "value": {
+      "Call": {
+        "function": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "arguments": [],
+        "program": null
+      }
+    }
+  }
+}
+

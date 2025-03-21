@@ -24,3 +24,6 @@ pub use compiler::*;
 
 mod options;
 pub use options::*;
+
+#[cfg(test)]
+mod test;

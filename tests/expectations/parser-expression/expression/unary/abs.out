@@ -1,0 +1,170 @@
+{
+  "Unary": {
+    "receiver": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "op": "Abs"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Unary": {
+            "receiver": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "op": "Abs"
+          }
+        },
+        "op": "Abs"
+      }
+    },
+    "op": "Abs"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "Abs"
+      }
+    },
+    "op": "Negate"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "Negate"
+      }
+    },
+    "op": "Abs"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "Abs"
+      }
+    },
+    "op": "Negate"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Unary": {
+            "receiver": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "op": "Abs"
+          }
+        },
+        "op": "Negate"
+      }
+    },
+    "op": "Abs"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "Abs"
+      }
+    },
+    "op": "Not"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "Not"
+      }
+    },
+    "op": "Abs"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "op": "Abs"
+      }
+    },
+    "op": "Not"
+  }
+}
+
+{
+  "Unary": {
+    "receiver": {
+      "Unary": {
+        "receiver": {
+          "Unary": {
+            "receiver": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "op": "Abs"
+          }
+        },
+        "op": "Not"
+      }
+    },
+    "op": "Abs"
+  }
+}
+

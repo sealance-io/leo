@@ -1,0 +1,42 @@
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_0:1:1
+     |
+   1 | aleo1qnr4dkkvkgfqph0vzc3y6z2eu975wnpz2925ntjccd5cfqxtyu8s7pyjh9
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_1:1:1
+     |
+   1 | ALEO1
+     | ^^^^^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_2:1:1
+     |
+   1 | Aleo1
+     | ^^^^^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_3:1:1
+     |
+   1 | aleO1
+     | ^^^^^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_4:1:1
+     |
+   1 | aleo2qnr4dkkvkgfqph0vzc3y6z2eu975wnpz2925ntjccd5cfqxtyu8sta57d9
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_5:1:1
+     |
+   1 | bleo1qnr4dkkvkgfqph0vzc3y6z2eu975wnpz2925ntjccd5cfqxtyu8sta57d9
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+

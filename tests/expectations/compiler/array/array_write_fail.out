@@ -1,14 +1,10 @@
-namespace = "Compile"
-expectation = "Fail"
-outputs = ["""
+Error [ETYC0372000]: invalid assignment target
+    --> compiler-test:4:9
+     |
+   4 |         a[0u32] = false;
+     |         ^^^^^^^
 Error [ETYC0372000]: invalid assignment target
     --> compiler-test:5:9
      |
-   5 |         a[0u32] = false;
+   5 |         a[1u32] = true;
      |         ^^^^^^^
-Error [ETYC0372000]: invalid assignment target
-    --> compiler-test:6:9
-     |
-   6 |         a[1u32] = true;
-     |         ^^^^^^^
-"""]

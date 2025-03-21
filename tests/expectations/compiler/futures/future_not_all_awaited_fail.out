@@ -1,6 +1,3 @@
-namespace = "Compile"
-expectation = "Fail"
-outputs = ["""
 Error [ESAZ0374001]: The following futures were never awaited: f4
     --> compiler-test:12:5
      |
@@ -41,4 +38,4 @@ Warning [WSAZ0374003]: The future `f5` is not awaited in the order in which they
   17 |         f5.await();
      |         ^^
      |
-     = While it is not required for futures to be awaited in order, there is some specific behavior that arises, which may affect the semantics of your program. See `https://github.com/AleoNet/snarkVM/issues/2570` for more context."""]
+     = While it is not required for futures to be awaited in order, there is some specific behavior that arises, which may affect the semantics of your program. See `https://github.com/AleoNet/snarkVM/issues/2570` for more context.

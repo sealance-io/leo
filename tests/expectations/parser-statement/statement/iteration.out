@@ -1,0 +1,175 @@
+{
+  "Iteration": {
+    "variable": {
+      "name": "x"
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "start": {
+      "Literal": {
+        "Integer": [
+          "U8",
+          "0",
+          {},
+          1
+        ]
+      }
+    },
+    "stop": {
+      "Literal": {
+        "Integer": [
+          "U8",
+          "7",
+          {},
+          2
+        ]
+      }
+    },
+    "inclusive": false,
+    "block": {
+      "statements": []
+    }
+  }
+}
+
+{
+  "Iteration": {
+    "variable": {
+      "name": "x"
+    },
+    "type_": {
+      "Integer": "I64"
+    },
+    "start": {
+      "Literal": {
+        "Integer": [
+          "I64",
+          "0",
+          {},
+          1
+        ]
+      }
+    },
+    "stop": {
+      "Literal": {
+        "Integer": [
+          "I64",
+          "7",
+          {},
+          2
+        ]
+      }
+    },
+    "inclusive": false,
+    "block": {
+      "statements": [
+        {
+          "Return": {
+            "expression": {
+              "Literal": {
+                "Integer": [
+                  "U8",
+                  "1",
+                  {},
+                  3
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
+
+{
+  "Iteration": {
+    "variable": {
+      "name": "x"
+    },
+    "type_": "Field",
+    "start": {
+      "Literal": {
+        "Field": [
+          "0",
+          {},
+          1
+        ]
+      }
+    },
+    "stop": {
+      "Literal": {
+        "Integer": [
+          "U8",
+          "99",
+          {},
+          2
+        ]
+      }
+    },
+    "inclusive": false,
+    "block": {
+      "statements": [
+        {
+          "Return": {
+            "expression": {
+              "Literal": {
+                "Integer": [
+                  "U8",
+                  "1",
+                  {},
+                  3
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
+
+{
+  "Iteration": {
+    "variable": {
+      "name": "x"
+    },
+    "type_": "Boolean",
+    "start": {
+      "Literal": {
+        "Integer": [
+          "U8",
+          "0",
+          {},
+          1
+        ]
+      }
+    },
+    "stop": {
+      "Identifier": {
+        "name": "Self"
+      }
+    },
+    "inclusive": false,
+    "block": {
+      "statements": [
+        {
+          "Return": {
+            "expression": {
+              "Literal": {
+                "Integer": [
+                  "U8",
+                  "1",
+                  {},
+                  3
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
+

@@ -1,8 +1,5 @@
-namespace = "Compile"
-expectation = "Fail"
-outputs = ["""
 Error [EPAR0370029]: A tuple expression must have at least two elements.
-    --> compiler-test:9:16
+    --> compiler-test:8:16
      |
-   9 |         return (b,);
-     |                ^^^^"""]
+   8 |         return (b,);
+     |                ^^^^

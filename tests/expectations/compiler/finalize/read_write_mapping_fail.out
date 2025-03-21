@@ -1,8 +1,5 @@
-namespace = "Compile"
-expectation = "Fail"
-outputs = ["""
 Error [EPAR0370009]: unexpected string: expected 'identifier', found ':'
-    --> compiler-test:26:53
+    --> compiler-test:25:53
      |
-  26 |     async function finalize_write_in_finalize(public: addr: address, public amount: u128) {
-     |                                                     ^"""]
+  25 |     async function finalize_write_in_finalize(public: addr: address, public amount: u128) {
+     |                                                     ^

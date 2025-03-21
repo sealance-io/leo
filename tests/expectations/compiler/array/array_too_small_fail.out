@@ -1,9 +1,5 @@
-namespace = "Compile"
-expectation = "Fail"
-outputs = ["""
 Error [ETYC0372076]: An array cannot be empty
-    --> compiler-test:4:20
+    --> compiler-test:3:20
      |
-   4 |     transition foo(a: [bool; 0]) -> bool {
+   3 |     transition foo(a: [bool; 0]) -> bool {
      |                    ^^^^^^^^^^^^
-"""]

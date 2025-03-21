@@ -1,14 +1,10 @@
-/*
-namespace = "Compile"
-expectation = "Pass"
-*/
 
-program test.aleo {    
+program test.aleo {
     struct Foo {
         a: u128,
         b: u128,
     }
-    
+
     transition main(
         i8_value: i8,
         i16_value: i16,
@@ -27,7 +23,7 @@ program test.aleo {
         let u128_value: u128 = 1u128;
         let scalar_value: scalar = 1scalar;
         // let string_value: string = "helloworld";
-    
+
         // SHA3_256 hash_to_field tests
         let a: field = SHA3_256::hash_to_field(addr_value);
         let b: field = SHA3_256::hash_to_field(bool_value);
@@ -46,6 +42,6 @@ program test.aleo {
         let o: field = SHA3_256::hash_to_field(scalar_value);
         // let p: field = SHA3_256::hash_to_field(string_value);
         let q: field = SHA3_256::hash_to_field(Foo { a: 1u128, b: 1u128 });
-    
+
         return a + o;
     }}

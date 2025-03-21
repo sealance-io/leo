@@ -1,0 +1,423 @@
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "expr"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U16"
+    },
+    "value": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "Add"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Call": {
+        "function": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "arguments": [],
+        "program": null
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": "String",
+    "value": {
+      "Identifier": {
+        "name": "expr"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "I8"
+    },
+    "value": {
+      "Identifier": {
+        "name": "expr"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "I16"
+    },
+    "value": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "Add"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "I8"
+    },
+    "value": {
+      "Call": {
+        "function": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "arguments": [],
+        "program": null
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": "String",
+    "value": {
+      "Identifier": {
+        "name": "expr"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Composite": {
+        "program": null
+      }
+    },
+    "value": {
+      "Call": {
+        "function": {
+          "Identifier": {
+            "name": "mint_private"
+          }
+        },
+        "arguments": [
+          {
+            "Literal": {
+              "Integer": [
+                "U64",
+                "100",
+                {},
+                4
+              ]
+            }
+          }
+        ],
+        "program": "credits"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Composite": {
+        "program": "credits"
+      }
+    },
+    "value": {
+      "Call": {
+        "function": {
+          "Identifier": {
+            "name": "mint_private"
+          }
+        },
+        "arguments": [
+          {
+            "Literal": {
+              "Integer": [
+                "U64",
+                "100",
+                {},
+                5
+              ]
+            }
+          }
+        ],
+        "program": "credits"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U32"
+    },
+    "value": {
+      "Identifier": {
+        "name": "expr"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U32"
+    },
+    "value": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "Add"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U32"
+    },
+    "value": {
+      "Call": {
+        "function": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "arguments": [],
+        "program": null
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U32"
+    },
+    "value": {
+      "Identifier": {
+        "name": "expr"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U32"
+    },
+    "value": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "Add"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U32"
+    },
+    "value": {
+      "Call": {
+        "function": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "arguments": [],
+        "program": null
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": "Address",
+    "value": {
+      "Literal": {
+        "Address": [
+          "aleo1fj982yqchhy973kz7e9jk6er7t6qd6jm9anplnlprem507w6lv9spwvfxx",
+          {},
+          1
+        ]
+      }
+    }
+  }
+}
+

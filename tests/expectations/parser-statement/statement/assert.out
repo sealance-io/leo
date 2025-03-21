@@ -1,0 +1,101 @@
+{
+  "Assert": {
+    "variant": {
+      "AssertEq": [
+        {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        {
+          "Identifier": {
+            "name": "y"
+          }
+        }
+      ]
+    }
+  }
+}
+
+{
+  "Assert": {
+    "variant": {
+      "AssertEq": [
+        {
+          "Struct": {
+            "name": {
+              "name": "Foo"
+            },
+            "members": [
+              {
+                "identifier": {
+                  "name": "x"
+                },
+                "expression": {
+                  "Identifier": {
+                    "name": "x"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "Struct": {
+            "name": {
+              "name": "Foo"
+            },
+            "members": [
+              {
+                "identifier": {
+                  "name": "x"
+                },
+                "expression": {
+                  "Identifier": {
+                    "name": "y"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
+
+{
+  "Assert": {
+    "variant": {
+      "AssertNeq": [
+        {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        {
+          "Identifier": {
+            "name": "y"
+          }
+        }
+      ]
+    }
+  }
+}
+
+{
+  "Assert": {
+    "variant": {
+      "Assert": {
+        "Literal": {
+          "Boolean": [
+            false,
+            {},
+            0
+          ]
+        }
+      }
+    }
+  }
+}
+

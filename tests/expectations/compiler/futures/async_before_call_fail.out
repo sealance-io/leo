@@ -1,6 +1,3 @@
-namespace = "Compile"
-expectation = "Fail"
-outputs = ["""
 Error [ETYC0372102]: External transition calls cannot be made after local async function call
     --> compiler-test:8:9
      |
@@ -8,4 +5,3 @@ Error [ETYC0372102]: External transition calls cannot be made after local async 
      |         ^^^^^^^^^^^^^^
      |
      = Move the async function call before the transition call.
-"""]

@@ -73,6 +73,8 @@ impl<'a> Pass for FunctionInliner<'a> {
     type Input = (Ast, &'a NodeBuilder, &'a CallGraph, &'a Assigner, &'a TypeTable);
     type Output = Result<Ast>;
 
+    const NAME: &'static str = "FunctionInliner";
+
     fn do_pass((ast, node_builder, call_graph, assigner, tt): Self::Input) -> Self::Output {
         let mut reconstructor = FunctionInliner::new(node_builder, call_graph, assigner, tt);
         let program = reconstructor.reconstruct_program(ast.into_repr());

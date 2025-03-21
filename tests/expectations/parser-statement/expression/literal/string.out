@@ -1,0 +1,147 @@
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_0:1:1
+     |
+   1 | "string"
+     | ^^^^^^^^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_1:1:1
+     |
+   1 | "another { } string"
+     | ^^^^^^^^^^^^^^^^^^^^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_2:1:1
+     |
+   1 | "{ ] [ ; a"
+     | ^^^^^^^^^^^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_3:1:1
+     |
+   1 | "test �
+     | ^^^^^^^^^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_4:1:1
+     |
+   1 | "😭
+     | ^^^^^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_5:1:1
+     |
+   1 | "✋
+     | ^^^^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_6:1:1
+     |
+   1 | "�
+     | ^^^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_7:1:1
+     |
+   1 | "�
+     | ^^^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_8:1:1
+     |
+   1 | "��
+     | ^^^^^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_9:1:1
+     |
+   1 | "（>３
+     | ^^^^^^^^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_10:1:1
+     |
+   1 | "ヽ༼ ಠ
+     | ^^^^^^^^^^^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_11:1:1
+     |
+   1 | "(╯°□°�
+     | ^^^^^^^^^^^^^^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_12:1:1
+     |
+   1 | "┬─┬ ノ
+     | ^^^^^^^^^^^^^^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_13:1:1
+     |
+   1 | "( ͡° ͜ʖ 
+     | ^^^^^^^^^^^^^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_14:1:1
+     |
+   1 | "b"
+     | ^^^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_15:1:1
+     |
+   1 | "ᕙ(▀̿ĺ̯
+     | ^^^^^^^^^^^^^^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_16:1:1
+     |
+   1 | "♥╣[-_-
+     | ^^^^^^^^^^^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_17:1:1
+     |
+   1 | "b"
+     | ^^^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_18:1:1
+     |
+   1 | "(⑅∫°
+     | ^^^^^^^^^^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_19:1:1
+     |
+   1 | "b"
+     | ^^^
+
+
+Error [EPAR0370005]: expected ; -- found '<eof>'
+    --> test_20:1:1
+     |
+   1 | "🦀
+     | ^^^^^
+
+

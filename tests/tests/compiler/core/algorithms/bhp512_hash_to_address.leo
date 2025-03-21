@@ -1,14 +1,10 @@
-/*
-namespace = "Compile"
-expectation = "Pass"
-*/
 
-program test.aleo {    
+program test.aleo {
     struct Foo {
         a: u128,
         b: u128,
     }
-    
+
     transition main(
         i8_value: i8,
         i16_value: i16,
@@ -27,7 +23,7 @@ program test.aleo {
         let u128_value: u128 = 1u128;
         let scalar_value: scalar = 1scalar;
         // let string_value: string = "helloworld";
-    
+
         // BHP512 hash_to_address tests
         let a: address = BHP512::hash_to_address(addr_value);
         let b: address = BHP512::hash_to_address(bool_value);
@@ -46,7 +42,7 @@ program test.aleo {
         let o: address = BHP512::hash_to_address(scalar_value);
         // let p: address = BHP512::hash_to_address(string_value);
         let q: address = BHP512::hash_to_address(Foo { a: 1u128, b: 1u128 });
-    
+
         return field_value;
     }
 }

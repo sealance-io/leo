@@ -1,0 +1,88 @@
+{
+  "Ternary": {
+    "condition": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "if_true": {
+      "Identifier": {
+        "name": "y"
+      }
+    },
+    "if_false": {
+      "Identifier": {
+        "name": "z"
+      }
+    }
+  }
+}
+
+{
+  "Ternary": {
+    "condition": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "if_true": {
+      "Ternary": {
+        "condition": {
+          "Identifier": {
+            "name": "a"
+          }
+        },
+        "if_true": {
+          "Identifier": {
+            "name": "b"
+          }
+        },
+        "if_false": {
+          "Identifier": {
+            "name": "c"
+          }
+        }
+      }
+    },
+    "if_false": {
+      "Identifier": {
+        "name": "z"
+      }
+    }
+  }
+}
+
+{
+  "Ternary": {
+    "condition": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "if_true": {
+      "Identifier": {
+        "name": "y"
+      }
+    },
+    "if_false": {
+      "Ternary": {
+        "condition": {
+          "Identifier": {
+            "name": "a"
+          }
+        },
+        "if_true": {
+          "Identifier": {
+            "name": "b"
+          }
+        },
+        "if_false": {
+          "Identifier": {
+            "name": "c"
+          }
+        }
+      }
+    }
+  }
+}
+

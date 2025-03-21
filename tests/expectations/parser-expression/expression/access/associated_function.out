@@ -1,0 +1,40 @@
+{
+  "Access": {
+    "AssociatedFunction": {
+      "variant": {
+        "name": "group"
+      },
+      "name": {
+        "name": "to_x_coordinate"
+      },
+      "arguments": [
+        {
+          "Identifier": {
+            "name": "a"
+          }
+        }
+      ]
+    }
+  }
+}
+
+{
+  "Access": {
+    "AssociatedFunction": {
+      "variant": {
+        "name": "group"
+      },
+      "name": {
+        "name": "to_y_coordinate"
+      },
+      "arguments": [
+        {
+          "Identifier": {
+            "name": "a"
+          }
+        }
+      ]
+    }
+  }
+}
+

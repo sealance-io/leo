@@ -1,14 +1,10 @@
-/*
-namespace = "Compile"
-expectation = "Fail"
-*/
 
-program test.aleo {    
+program test.aleo {
     struct Foo {
         a: u16,
         b: u16,
     }
-    
+
     transition main(
         i8_value: i8,
         i16_value: i16,
@@ -27,7 +23,7 @@ program test.aleo {
         let u128_value: u128 = 1u128;
         let scalar_value: scalar = 1scalar;
         // let string_value: string = "helloworld";
-    
+
         // Pedersen64 hash_to_u16 tests
         let a: u16 = Pedersen64::hash_to_u16(addr_value);
         let b: u16 = Pedersen64::hash_to_u16(bool_value);
@@ -42,7 +38,7 @@ program test.aleo {
         let o: u16 = Pedersen64::hash_to_u16(scalar_value);
         // let p: u16 = Pedersen64::hash_to_u16(string_value);
         let q: u16 = Pedersen64::hash_to_u16(Foo { a: 1u16, b: 1u16, });
-    
+
         return a;
     }
 }

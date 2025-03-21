@@ -1,14 +1,10 @@
-/*
-namespace = "Compile"
-expectation = "Pass"
-*/
 
-program test.aleo {    
+program test.aleo {
     struct Foo {
         a: u128,
         b: u128,
     }
-    
+
     transition main(
         i8_value: i8,
         i16_value: i16,

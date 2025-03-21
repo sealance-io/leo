@@ -1,0 +1,22 @@
+{
+  "Expression": {
+    "expression": {
+      "Call": {
+        "function": {
+          "Identifier": {
+            "name": "finalize"
+          }
+        },
+        "arguments": [
+          {
+            "Identifier": {
+              "name": "foo"
+            }
+          }
+        ],
+        "program": null
+      }
+    }
+  }
+}
+

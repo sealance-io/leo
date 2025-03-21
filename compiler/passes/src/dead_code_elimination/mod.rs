@@ -67,6 +67,8 @@ impl<'a> Pass for DeadCodeEliminator<'a> {
     type Input = (Ast, &'a NodeBuilder);
     type Output = Result<Ast>;
 
+    const NAME: &'static str = "DeadCodeEliminator";
+
     fn do_pass((ast, node_builder): Self::Input) -> Self::Output {
         let mut reconstructor = DeadCodeEliminator::new(node_builder);
         let program = reconstructor.reconstruct_program(ast.into_repr());

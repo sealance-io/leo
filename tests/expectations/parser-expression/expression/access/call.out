@@ -1,0 +1,93 @@
+{
+  "Call": {
+    "function": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "arguments": [],
+    "program": null
+  }
+}
+
+{
+  "Call": {
+    "function": {
+      "Identifier": {
+        "name": "X"
+      }
+    },
+    "arguments": [],
+    "program": null
+  }
+}
+
+{
+  "Call": {
+    "function": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "arguments": [
+      {
+        "Identifier": {
+          "name": "y"
+        }
+      }
+    ],
+    "program": null
+  }
+}
+
+{
+  "Call": {
+    "function": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "arguments": [
+      {
+        "Identifier": {
+          "name": "y"
+        }
+      },
+      {
+        "Identifier": {
+          "name": "z"
+        }
+      }
+    ],
+    "program": null
+  }
+}
+
+{
+  "Call": {
+    "function": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "arguments": [
+      {
+        "Identifier": {
+          "name": "x"
+        }
+      },
+      {
+        "Identifier": {
+          "name": "y"
+        }
+      },
+      {
+        "Identifier": {
+          "name": "z"
+        }
+      }
+    ],
+    "program": null
+  }
+}
+

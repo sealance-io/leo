@@ -1,0 +1,46 @@
+{
+  "Expression": {
+    "expression": {
+      "Identifier": {
+        "name": "expr"
+      }
+    }
+  }
+}
+
+{
+  "Expression": {
+    "expression": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "Add"
+      }
+    }
+  }
+}
+
+{
+  "Expression": {
+    "expression": {
+      "Call": {
+        "function": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "arguments": [],
+        "program": null
+      }
+    }
+  }
+}
+

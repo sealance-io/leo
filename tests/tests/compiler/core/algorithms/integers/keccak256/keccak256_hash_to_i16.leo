@@ -1,14 +1,10 @@
-/*
-namespace = "Compile"
-expectation = "Pass"
-*/
 
-program test.aleo {    
+program test.aleo {
     struct Foo {
         a: u128,
         b: u128,
     }
-    
+
     transition main(
         i8_value: i8,
         i16_value: i16,
@@ -27,7 +23,7 @@ program test.aleo {
         let u128_value: u128 = 1u128;
         let scalar_value: scalar = 1scalar;
         // let string_value: string = "helloworld";
-    
+
         // Keccak256 hash_to_i16 tests
         let a: i16 = Keccak256::hash_to_i16(addr_value);
         let b: i16 = Keccak256::hash_to_i16(bool_value);
@@ -46,7 +42,7 @@ program test.aleo {
         let o: i16 = Keccak256::hash_to_i16(scalar_value);
         // let p: i16 = Keccak256::hash_to_i16(string_value);
         let q: i16 = Keccak256::hash_to_i16(Foo { a: 1u128, b: 1u128 });
-    
+
         return a;
     }
 }

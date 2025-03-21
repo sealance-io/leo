@@ -1,14 +1,10 @@
-/*
-namespace = "Compile"
-expectation = "Pass"
-*/
 
-program test.aleo {    
+program test.aleo {
     struct Foo {
         a: u128,
         b: u128,
     }
-    
+
     transition main(
         i8_value: i8,
         i16_value: i16,
@@ -27,7 +23,7 @@ program test.aleo {
         let u128_value: u128 = 1u128;
         let scalar_value: scalar = 1scalar;
         // let string_value: string = "helloworld";
-    
+
         // BHP512 commit tests
         let a: field = BHP512::commit_to_field(addr_value, 1scalar);
         let b: field = BHP512::commit_to_field(bool_value, 1scalar);
@@ -47,6 +43,6 @@ program test.aleo {
         // let p: field = BHP512::commit_to_field(string_value, 1scalar);
         let q: field = BHP512::commit_to_field(Foo { a: 1u128, b: 2u128 }, 1scalar);
         let r: field = BHP512::commit_to_field(Foo { a: 1u128, b: 2u128 }, -1scalar);
-    
+
         return a + o;
     }}

@@ -1,8 +1,5 @@
-namespace = "Compile"
-expectation = "Fail"
-outputs = ["""
 Error [EPAR0370005]: expected : -- found '='
-    --> compiler-test:5:16
+    --> compiler-test:4:16
      |
-   5 |         let hi = 2u8;
-     |                ^"""]
+   4 |         let hi = 2u8;
+     |                ^

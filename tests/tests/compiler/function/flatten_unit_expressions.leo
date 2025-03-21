@@ -1,7 +1,3 @@
-/*
-namespace = "Compile"
-expectation = "Pass"
-
 [[configs]]
 dce_enabled = true
 

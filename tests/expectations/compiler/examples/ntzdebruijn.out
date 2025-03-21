@@ -1,6 +1,3 @@
-namespace = "Compile"
-expectation = "Pass"
-outputs = [[{ compile = [{ initial_ast = "776475d60a0722c4fc736391d9bac011ad55dc4c55373775641ab22b3dc62b02", unrolled_ast = "776475d60a0722c4fc736391d9bac011ad55dc4c55373775641ab22b3dc62b02", ssa_ast = "1e73d636efe1a323fee9e8160abcf25ffae1272bcdb5423a0faf8902cf8c1e71", flattened_ast = "f896de25ea535a63fcf3f58695b6c9d16fa7370e3301f17ec6eaa0bd839f716e", destructured_ast = "b49a889ba314836db2ef9604dca88d72bfaed753ed03650858f48ad25e05130a", inlined_ast = "5ec704aab884c69f03f4fe424402e8988c3f40e068b5ab4f6af059f537867687", dce_ast = "26a36139ea44188311968fbd4f832fb711b7f902834c812f79b4a013b8d874b9", bytecode = """
 program test.aleo;
 
 closure deBruijnTableLookup:
@@ -129,39 +126,41 @@ closure deBruijnTableLookup:
     is.eq r0 31u32 into r122;
     and r119 r121 into r123;
     and r123 r122 into r124;
-    ternary r124 27u8 0u8 into r125;
-    ternary r120 28u8 r125 into r126;
-    ternary r116 13u8 r126 into r127;
-    ternary r112 29u8 r127 into r128;
-    ternary r108 14u8 r128 into r129;
-    ternary r104 8u8 r129 into r130;
-    ternary r100 17u8 r130 into r131;
-    ternary r96 30u8 r131 into r132;
-    ternary r92 11u8 r132 into r133;
-    ternary r88 15u8 r133 into r134;
-    ternary r84 9u8 r134 into r135;
-    ternary r80 21u8 r135 into r136;
-    ternary r76 5u8 r136 into r137;
-    ternary r72 18u8 r137 into r138;
-    ternary r68 23u8 r138 into r139;
-    ternary r64 31u8 r139 into r140;
-    ternary r60 26u8 r140 into r141;
-    ternary r56 12u8 r141 into r142;
-    ternary r52 7u8 r142 into r143;
-    ternary r48 16u8 r143 into r144;
-    ternary r44 10u8 r144 into r145;
-    ternary r40 20u8 r145 into r146;
-    ternary r36 4u8 r146 into r147;
-    ternary r32 22u8 r147 into r148;
-    ternary r28 25u8 r148 into r149;
-    ternary r24 6u8 r149 into r150;
-    ternary r20 19u8 r150 into r151;
-    ternary r16 3u8 r151 into r152;
-    ternary r12 24u8 r152 into r153;
-    ternary r8 2u8 r153 into r154;
-    ternary r4 1u8 r154 into r155;
-    ternary r1 0u8 r155 into r156;
-    output r156 as u8;
+    not r122 into r125;
+    and r123 r125 into r126;
+    ternary r124 27u8 0u8 into r127;
+    ternary r120 28u8 r127 into r128;
+    ternary r116 13u8 r128 into r129;
+    ternary r112 29u8 r129 into r130;
+    ternary r108 14u8 r130 into r131;
+    ternary r104 8u8 r131 into r132;
+    ternary r100 17u8 r132 into r133;
+    ternary r96 30u8 r133 into r134;
+    ternary r92 11u8 r134 into r135;
+    ternary r88 15u8 r135 into r136;
+    ternary r84 9u8 r136 into r137;
+    ternary r80 21u8 r137 into r138;
+    ternary r76 5u8 r138 into r139;
+    ternary r72 18u8 r139 into r140;
+    ternary r68 23u8 r140 into r141;
+    ternary r64 31u8 r141 into r142;
+    ternary r60 26u8 r142 into r143;
+    ternary r56 12u8 r143 into r144;
+    ternary r52 7u8 r144 into r145;
+    ternary r48 16u8 r145 into r146;
+    ternary r44 10u8 r146 into r147;
+    ternary r40 20u8 r147 into r148;
+    ternary r36 4u8 r148 into r149;
+    ternary r32 22u8 r149 into r150;
+    ternary r28 25u8 r150 into r151;
+    ternary r24 6u8 r151 into r152;
+    ternary r20 19u8 r152 into r153;
+    ternary r16 3u8 r153 into r154;
+    ternary r12 24u8 r154 into r155;
+    ternary r8 2u8 r155 into r156;
+    ternary r4 1u8 r156 into r157;
+    ternary r1 0u8 r157 into r158;
+    output r158 as u8;
 
 function main:
     input r0 as u32.public;
@@ -173,4 +172,3 @@ function main:
     call deBruijnTableLookup r5 into r6;
     ternary r1 32u8 r6 into r7;
     output r7 as u8.private;
-""", errors = "", warnings = "" }] }]]

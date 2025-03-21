@@ -1,6 +1,3 @@
-namespace = "Compile"
-expectation = "Pass"
-outputs = [[{ compile = [{ initial_ast = "8518512436454079e4f9559e223ef664b9db6b03a5553fc8546d526b88760013", unrolled_ast = "ec4b553798a8d8cfe6219ccc226d76c16277c03633cd5adc9f8671c22c084fd0", ssa_ast = "291008670fa3cb4d3b0a37e679c8a8bc99136ee56be3a95f7238c64f5adc0101", flattened_ast = "658cc41a1ab99b2aa8d7ea396720a4c72ca46b7cb516bd3915e42ab7d7ea37d2", destructured_ast = "6c18070f16c7f374717ac9238ff87046706b1dae4457d34e4976fbc024a62a35", inlined_ast = "6c18070f16c7f374717ac9238ff87046706b1dae4457d34e4976fbc024a62a35", dce_ast = "9f1eedd02c3f9f4babbe8ab8a150483a1d2247c472e0f16436859c3dd60ee057", bytecode = """
 program test.aleo;
 
 struct Foo:
@@ -17,5 +14,18 @@ function main:
     input r6 as u32.private;
     input r7 as u64.private;
     hash.keccak384 aleo10qerras5799u6k7rjtc9y3hcwxuykr45qra7x7dp6jgnc0923czqm0lgta into r8 as i128;
+    hash.keccak384 true into r9 as i128;
+    hash.keccak384 1field into r10 as i128;
+    hash.keccak384 1540945439182663264862696551825005342995406165131907382295858612069623286213group into r11 as i128;
+    hash.keccak384 r0 into r12 as i128;
+    hash.keccak384 r1 into r13 as i128;
+    hash.keccak384 r2 into r14 as i128;
+    hash.keccak384 r3 into r15 as i128;
+    hash.keccak384 1i128 into r16 as i128;
+    hash.keccak384 r4 into r17 as i128;
+    hash.keccak384 r5 into r18 as i128;
+    hash.keccak384 r6 into r19 as i128;
+    hash.keccak384 r7 into r20 as i128;
+    hash.keccak384 1u128 into r21 as i128;
+    hash.keccak384 1scalar into r22 as i128;
     output r8 as i128.private;
-""", errors = "", warnings = "" }] }]]

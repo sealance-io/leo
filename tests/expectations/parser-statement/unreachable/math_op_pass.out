@@ -1,0 +1,518 @@
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "a"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "b"
+          }
+        },
+        "op": "Eq"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "a"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "b"
+          }
+        },
+        "op": "Neq"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "a"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "b"
+          }
+        },
+        "op": "Gt"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "a"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "b"
+          }
+        },
+        "op": "Gte"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "a"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "b"
+          }
+        },
+        "op": "Lt"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "a"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "b"
+          }
+        },
+        "op": "Lte"
+      }
+    }
+  }
+}
+
+{
+  "Definition": {
+    "declaration_type": "Let",
+    "place": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "type_": {
+      "Integer": "U8"
+    },
+    "value": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "a"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "b"
+          }
+        },
+        "op": "Gt"
+      }
+    }
+  }
+}
+
+{
+  "Assign": {
+    "place": {
+      "Identifier": {
+        "name": "x_"
+      }
+    },
+    "value": {
+      "Identifier": {
+        "name": "b"
+      }
+    }
+  }
+}
+
+{
+  "Assign": {
+    "place": {
+      "Identifier": {
+        "name": "xconsole"
+      }
+    },
+    "value": {
+      "Identifier": {
+        "name": "b"
+      }
+    }
+  }
+}
+
+{
+  "Assign": {
+    "place": {
+      "Identifier": {
+        "name": "xconst"
+      }
+    },
+    "value": {
+      "Identifier": {
+        "name": "b"
+      }
+    }
+  }
+}
+
+{
+  "Assign": {
+    "place": {
+      "Identifier": {
+        "name": "xlet"
+      }
+    },
+    "value": {
+      "Identifier": {
+        "name": "b"
+      }
+    }
+  }
+}
+
+{
+  "Assign": {
+    "place": {
+      "Identifier": {
+        "name": "xfor"
+      }
+    },
+    "value": {
+      "Identifier": {
+        "name": "b"
+      }
+    }
+  }
+}
+
+{
+  "Assign": {
+    "place": {
+      "Identifier": {
+        "name": "xif"
+      }
+    },
+    "value": {
+      "Identifier": {
+        "name": "b"
+      }
+    }
+  }
+}
+
+{
+  "Assign": {
+    "place": {
+      "Identifier": {
+        "name": "xelse"
+      }
+    },
+    "value": {
+      "Identifier": {
+        "name": "b"
+      }
+    }
+  }
+}
+
+{
+  "Assign": {
+    "place": {
+      "Identifier": {
+        "name": "xi8"
+      }
+    },
+    "value": {
+      "Identifier": {
+        "name": "b"
+      }
+    }
+  }
+}
+
+{
+  "Assign": {
+    "place": {
+      "Identifier": {
+        "name": "xi16"
+      }
+    },
+    "value": {
+      "Identifier": {
+        "name": "b"
+      }
+    }
+  }
+}
+
+{
+  "Assign": {
+    "place": {
+      "Identifier": {
+        "name": "xi32"
+      }
+    },
+    "value": {
+      "Identifier": {
+        "name": "b"
+      }
+    }
+  }
+}
+
+{
+  "Assign": {
+    "place": {
+      "Identifier": {
+        "name": "xi64"
+      }
+    },
+    "value": {
+      "Identifier": {
+        "name": "b"
+      }
+    }
+  }
+}
+
+{
+  "Assign": {
+    "place": {
+      "Identifier": {
+        "name": "xi128"
+      }
+    },
+    "value": {
+      "Identifier": {
+        "name": "b"
+      }
+    }
+  }
+}
+
+{
+  "Assign": {
+    "place": {
+      "Identifier": {
+        "name": "xu8"
+      }
+    },
+    "value": {
+      "Identifier": {
+        "name": "b"
+      }
+    }
+  }
+}
+
+{
+  "Assign": {
+    "place": {
+      "Identifier": {
+        "name": "xu16"
+      }
+    },
+    "value": {
+      "Identifier": {
+        "name": "b"
+      }
+    }
+  }
+}
+
+{
+  "Assign": {
+    "place": {
+      "Identifier": {
+        "name": "xu32"
+      }
+    },
+    "value": {
+      "Identifier": {
+        "name": "b"
+      }
+    }
+  }
+}
+
+{
+  "Assign": {
+    "place": {
+      "Identifier": {
+        "name": "xu64"
+      }
+    },
+    "value": {
+      "Identifier": {
+        "name": "b"
+      }
+    }
+  }
+}
+
+{
+  "Assign": {
+    "place": {
+      "Identifier": {
+        "name": "xu128"
+      }
+    },
+    "value": {
+      "Identifier": {
+        "name": "b"
+      }
+    }
+  }
+}
+
+{
+  "Assign": {
+    "place": {
+      "Identifier": {
+        "name": "xreturn"
+      }
+    },
+    "value": {
+      "Identifier": {
+        "name": "b"
+      }
+    }
+  }
+}
+
+{
+  "Assign": {
+    "place": {
+      "Identifier": {
+        "name": "xtrue"
+      }
+    },
+    "value": {
+      "Identifier": {
+        "name": "b"
+      }
+    }
+  }
+}
+
+{
+  "Assign": {
+    "place": {
+      "Identifier": {
+        "name": "xfalse"
+      }
+    },
+    "value": {
+      "Identifier": {
+        "name": "b"
+      }
+    }
+  }
+}
+
+{
+  "Assign": {
+    "place": {
+      "Identifier": {
+        "name": "x0"
+      }
+    },
+    "value": {
+      "Identifier": {
+        "name": "b"
+      }
+    }
+  }
+}
+

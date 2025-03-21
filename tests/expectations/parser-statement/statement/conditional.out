@@ -1,0 +1,165 @@
+{
+  "Conditional": {
+    "condition": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "then": {
+      "statements": [
+        {
+          "Return": {
+            "expression": {
+              "Literal": {
+                "Integer": [
+                  "U8",
+                  "0",
+                  {},
+                  1
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "otherwise": null
+  }
+}
+
+{
+  "Conditional": {
+    "condition": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "then": {
+      "statements": [
+        {
+          "Return": {
+            "expression": {
+              "Literal": {
+                "Integer": [
+                  "U8",
+                  "0",
+                  {},
+                  1
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "otherwise": null
+  }
+}
+
+{
+  "Conditional": {
+    "condition": {
+      "Identifier": {
+        "name": "x"
+      }
+    },
+    "then": {
+      "statements": []
+    },
+    "otherwise": {
+      "Block": {
+        "statements": []
+      }
+    }
+  }
+}
+
+{
+  "Conditional": {
+    "condition": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "Add"
+      }
+    },
+    "then": {
+      "statements": []
+    },
+    "otherwise": {
+      "Conditional": {
+        "condition": {
+          "Binary": {
+            "left": {
+              "Identifier": {
+                "name": "x"
+              }
+            },
+            "right": {
+              "Identifier": {
+                "name": "z"
+              }
+            },
+            "op": "Add"
+          }
+        },
+        "then": {
+          "statements": []
+        },
+        "otherwise": {
+          "Block": {
+            "statements": []
+          }
+        }
+      }
+    }
+  }
+}
+
+{
+  "Conditional": {
+    "condition": {
+      "Binary": {
+        "left": {
+          "Identifier": {
+            "name": "x"
+          }
+        },
+        "right": {
+          "Identifier": {
+            "name": "y"
+          }
+        },
+        "op": "Add"
+      }
+    },
+    "then": {
+      "statements": [
+        {
+          "Return": {
+            "expression": {
+              "Literal": {
+                "Integer": [
+                  "U8",
+                  "0",
+                  {},
+                  3
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "otherwise": null
+  }
+}
+

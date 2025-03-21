@@ -1,6 +1,3 @@
-namespace = "Compile"
-expectation = "Pass"
-outputs = [[{ compile = [{ initial_ast = "74b91eea4dda00f41f01bfdff6b44aeb540ae4b2d44a4cff3f3b02c1a1bd15cd", unrolled_ast = "aac48b5ae5fe2b8e3c58f9b6143beebeafe000921f321691c355567275d38b21", ssa_ast = "1f5a02deba441a6a97389184f9f66a1e3c12a919b78586d1621539f75a129889", flattened_ast = "3382ded337ce447c5e824f47a5120373678145fe47ec5dc46c73e669b87e43e0", destructured_ast = "d13e5c6c5dd8e75971cdb0075ef36c640b2915f1d4957578dc3b95b737bb889e", inlined_ast = "d13e5c6c5dd8e75971cdb0075ef36c640b2915f1d4957578dc3b95b737bb889e", dce_ast = "568dea727acdda27a8572682ea9b0ca50aa0eb853855cd29406fd475e4bc0b70", bytecode = """
 program test.aleo;
 
 struct Foo:
@@ -17,7 +14,19 @@ function main:
     input r6 as u32.private;
     input r7 as u64.private;
     hash.keccak384 aleo10qerras5799u6k7rjtc9y3hcwxuykr45qra7x7dp6jgnc0923czqm0lgta into r8 as scalar;
-    hash.keccak384 1scalar into r9 as scalar;
-    add r8 r9 into r10;
-    output r10 as scalar.private;
-""", errors = "", warnings = "" }] }]]
+    hash.keccak384 true into r9 as scalar;
+    hash.keccak384 1field into r10 as scalar;
+    hash.keccak384 1540945439182663264862696551825005342995406165131907382295858612069623286213group into r11 as scalar;
+    hash.keccak384 r0 into r12 as scalar;
+    hash.keccak384 r1 into r13 as scalar;
+    hash.keccak384 r2 into r14 as scalar;
+    hash.keccak384 r3 into r15 as scalar;
+    hash.keccak384 1i128 into r16 as scalar;
+    hash.keccak384 r4 into r17 as scalar;
+    hash.keccak384 r5 into r18 as scalar;
+    hash.keccak384 r6 into r19 as scalar;
+    hash.keccak384 r7 into r20 as scalar;
+    hash.keccak384 1u128 into r21 as scalar;
+    hash.keccak384 1scalar into r22 as scalar;
+    add r8 r22 into r23;
+    output r23 as scalar.private;

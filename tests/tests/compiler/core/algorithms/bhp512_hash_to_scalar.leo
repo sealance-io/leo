@@ -1,14 +1,10 @@
-/*
-namespace = "Compile"
-expectation = "Pass"
-*/
 
-program test.aleo {    
+program test.aleo {
     struct Foo {
         a: u128,
         b: u128,
     }
-    
+
     transition main(
         i8_value: i8,
         i16_value: i16,
@@ -27,7 +23,7 @@ program test.aleo {
         let u128_value: u128 = 1u128;
         let scalar_value: scalar = 1scalar;
         // let string_value: string = "helloworld";
-    
+
         // BHP512 hash_to_scalar tests
         let a: scalar = BHP512::hash_to_scalar(addr_value);
         let b: scalar = BHP512::hash_to_scalar(bool_value);
@@ -46,6 +42,6 @@ program test.aleo {
         let o: scalar = BHP512::hash_to_scalar(scalar_value);
         // let p: scalar = BHP512::hash_to_scalar(string_value);
         let q: scalar = BHP512::hash_to_scalar(Foo { a: 1u128, b: 1u128 });
-    
+
         return a + o;
     }}
